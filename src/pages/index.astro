@@ -1,0 +1,147 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import LogoImg from '~/assets/images/Logo1.jpeg';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+//Arthro
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Button from '~/components/ui/Button.astro';
+
+import Features4 from '~/components/widgets/Features4.astro';
+
+import Image from '~/components/common/Image.astro'; //Arthro
+import BannerImg from '~/assets/images/LongerBanner.png'; //Arthro
+
+import ImagelistGallery from '~/components/widgets/ImagelistGallery.astro';
+import ImagelistHospGallery from '~/components/widgets/ImagelistHospGallery.astro';
+
+import appStoreImg from '~/assets/images/app-store.png';
+import googlePlayImg from '~/assets/images/google-play.png';
+import Icon from 'node_modules/astro-icon/components/Icon.astro';
+
+const appStoreDownloadLink = 'https://github.com/onwidget/astrowind';
+const googlePlayDownloadLink = 'https://github.com/onwidget/astrowind';
+
+const metadata = {
+  title: 'ArthroSurgeon Dr. Dinesh Choudary',
+  ignoreTitleTemplate: true,
+};
+---
+
+
+  <Layout metadata={metadata}>
+    <div class="h114" >
+    <!-- Arthro-->
+    <!--
+<Image  class="mx-auto rounded-md w-full  " 
+        src={BannerImg} 
+        alt="Banner Image" 
+        widths={[400, 768, 1024, 2040]} 
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px" 
+        loading="eager"
+                  width={1600}
+                  height={136}
+        
+        />
+-->
+
+    <Hero2
+      image={{
+        src: '~/assets/images/arthrosurgeon.png',
+        alt: 'AstroWind Hero Image',
+      }}
+      image1={{
+        src: '~/assets/images/doctor-6.jpeg',
+        alt: 'AstroWind Hero Image',
+      }}
+      image2={{
+        src: '~/assets/images/doctor-3.jpeg',
+        alt: 'AstroWind Hero Image',
+      }}
+      image3={{
+        src: '~/assets/images/doctor-4.jpeg',
+        alt: 'AstroWind Hero Image',
+      }}
+      image4={{
+        src: '~/assets/images/doctor-5.jpg',
+        alt: 'AstroWind Hero Image',
+      }}
+      image5={{
+        src: '~/assets/images/doctor-9.jpeg',
+        alt: 'AstroWind Hero Image',
+      }}
+      image6={{
+        src: '~/assets/images/doctor-8.jpeg',
+        alt: 'AstroWind Hero Image',
+      }}
+      
+      actions={[
+       
+        {  variant: 'primary',text: 'Appointments', href: 'tel:9940349640',icon:'tabler:phone', },
+        { text: 'View Profile', href: './personal' },
+      ]}
+      actions1={[
+        
+        // {variant:"tertiary", text: 'To Book An Appointment Click Here To Call us', href: 'tel:9940349640',icon:'tabler:phone' },
+        
+      ]}
+   
+    >
+      <Fragment slot="title">
+        <!--
+    <div class="text-5xl bg-gradient-to-r from-teal-600 via-indigo-700 to-purple-800 inline-block text-transparent bg-clip-text mb-5  dark:text-white highlight">............................................</div>
+    -->
+        <div
+          class="animate-linear mb-20 bg-gradient-to-r from-slate-800 via-sky-500 to-slate-800 dark:bg-gradient-to-r dark:from-cyan-600 dark:via-sky-200 dark:to-cyan-600 inline text-transparent bg-clip-text bg-[length:190%_auto] "
+        >
+          Dr. Dinesh Choudary
+        </div>
+        <!-- <h1 class="animate-translateL mb-10 bg-gradient-to-r from-[#6658fe] via-pink-500 to-[#6658fe] bg-[length:200%_auto] bg-clip-text text-6xl font-bold text-transparent">Dr. Dinesh Choudary</h1> -->
+        <div class="text-3xl text-neutral-600 font-family:Urbanist tracking-tighter dark:text-slate-400 ">
+          Your Expert in Comprehensive Joint Care.
+        </div>
+        <!--  <div class="text-3xl animate-typing overflow-hidden whitespace-nowrap  text-neutral-600 font-family:Urbanist tracking-tighter"> Your Expert in Comprehensive Joint Care. </div>
+     -->
+        <!-- <span
+        class="hidden xl:inline">made easy</span
+      >-->
+        <!-- <div class="text-5xl bg-gradient-to-r from-teal-600 via-indigo-700 to-purple-800 inline-block text-transparent bg-clip-text mb-5  dark:text-white highlight">............................................</div>
+   -->
+      </Fragment>
+
+      <Fragment slot="subtitle">
+        <span class="text-sm p-1.5 sm:text-xl  sm:inline bg-[#007172] sm:p-0.5   text-slate-200 ">
+          Proven Expertise in Restoring Mobility, a Track Record of Excellence, and Advanced, Compassionate Care for
+          Optimal Orthopedic Health
+        </span>
+      </Fragment>
+    </Hero2>
+
+    <!-- Hero Widget ******************* -->
+
+    <!-- Arthro Image Gallery  ************** -->
+
+    <ImagelistGallery
+      title="Conditions Treated"
+      information={`
+                `}
+    />
+
+    <ImagelistHospGallery
+      title="Hospitals"
+      information={`
+                `}
+    />
+  </div>
+  </Layout>
+

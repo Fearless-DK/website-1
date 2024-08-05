@@ -1,0 +1,467 @@
+---
+import Features2 from '~/components/widgets/Features2withlink.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+
+const metadata = {
+  title: 'ArthroSurgeon Dr. Dinesh Choudary-Treatments',
+  ignoreTitleTemplate: true,
+};
+
+
+import Content from '~/components/widgets/ContentwithLink.astro';
+
+import Content1 from '~/components/widgets/ContentwithLink.astro';
+
+import SurgicalTreatment1 from '~/components/widgets/Contentlink1.astro';
+---
+
+<Layout metadata={metadata} >
+  
+  <!-- Hero Widget ******************* -->
+
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+
+    columns={2}
+    items={[
+      {
+        title: 'Surgical Treatments',
+        description: '',
+        callToAction: {
+         href: '#surgicaltreatments',
+        }
+        
+      },
+      {
+        title: 'Non-Surgical Treatments',
+        description:'',
+        callToAction: {
+         href: '#nonsurgicaltreatments',
+        }
+      },
+    ]}
+  />
+
+  <Content
+    isAfterContent
+    title='Surgical Treatments'
+    id='surgicaltreatments'
+    items={[
+      {
+        title: 'Joint Replacement',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#jointreplacement',
+        }
+      },
+      {
+        title: 'Hip Replacement',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#HipReplacement',
+        }
+        
+      },
+      {
+        title: 'Knee Replacement',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#KneeReplacement',
+        }
+      },
+      {
+        title: 'Spine Surgery',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#SpineSurgery',
+        }
+      },
+      {
+        title: 'Sports Injury',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#SportsInjury',
+        }
+      },
+      {
+        title: 'Trauma',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#Trauma',
+        }
+      },
+      {
+        title: 'Shoulder',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#Shoulder',
+        }
+      },
+      {
+        title: 'Elbow',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#Elbow',
+        }
+      },
+      {
+        title: 'Arthroscopy',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#Arthroscopy',
+        }
+      },
+      
+      
+      
+    ]}
+    image={{
+      src: 'https://i.ibb.co/10Mt1vp/Whats-App-Image-2024-04-08-at-10-20-52-AM-2.jpg',
+      alt: 'SURGICAL TREATMENTS'
+    }} 
+   
+    
+  />
+  <!-- image={{
+    src: '~/assets/images/hero.png',
+    alt: 'SURGICAL TREATMENTS'
+  }} -->
+
+<Content
+    isAfterContent
+    title='Non-Surgical Treatments'
+    id='nonsurgicaltreatments'
+    items={[
+      {
+        title: 'Cortisone Injections',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#CortisoneInjections',
+        }
+      },
+      {
+        title: 'Ice Compression',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#IceCompression',
+        }
+        
+      },
+      {
+        title: 'Synvisc – OA injection',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#SynviscOAinjection',
+        }
+      },
+      {
+        title: 'PRP – Platelet Rich Plasma Treatment',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#PRPPlateletRichPlasmaTreatment',
+        }
+      },
+      {
+        title: 'Physiotherapy',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#Physiotherapy',
+        }
+      },
+      {
+        title: 'Prehabilitation',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#Physiotherapy',
+        }
+      },
+      {
+        title: 'Rehabilitation',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#Physiotherapy',
+        }
+      },
+      
+      
+    ]}
+   image={{
+    src: '~/assets/images/heroo1.png',
+    alt: 'SURGICAL TREATMENTS'
+  }}
+   
+    
+  />
+  <!-- image={{
+    src: '~/assets/images/hero11.png',
+    alt: 'SURGICAL TREATMENTS'
+  }} -->
+  <!-- jointreplacement -->
+    <SurgicalTreatment1
+    isAfterContent
+    id='jointreplacement',
+    title='Joint Replacement ',
+    items={[
+      {
+        title: 'Surgical Treatment: Joint Replacement',
+        description: 'Total knee replacement surgery is the ideal option if you face severe issues while performing daily tasks like climbing stairs, walking, or age-related wear and tear in knee joints. Dr Dinesh Choudary is a well-renowned orthopaedic surgeon in Pune, Maharashtra, who has conducted several joint replacement surgeries in Pune with patients across the city. <br/> <br/> Many times, non-surgical treatments such as weight reduction, lifestyle changes, and knee-related exercises are the initial ways to cope with the pain. But if the pain persists, joint replacement surgery might be your answer. After careful clinical examination and X-rays might suggest joint replacement surgery for you. After all, our goal is to ensure the greatest standards of medicine and delivering a high-quality experience for you. ',
+        // callToAction: {
+        //  href: '#surgicaltreatments',
+        // }
+      },
+        
+    ]}
+  
+  
+    
+  /> 
+  <!-- HipReplacement -->
+  <SurgicalTreatment1
+  isAfterContent
+  id='HipReplacement',
+  title='Hip Replacement',
+  items={[
+    {
+      title: 'Surgical Treatment: Hip Replacement',
+      description: "A hip replacement is a surgical process that supplants the damaged hip with an artificial hip joint. Here, the head of the femur is discarded with the socket's surface layer wherein it rests. Hip joint's artificial components come in different shapes, sizes, and designs. And these are composed of cobalt, ceramic, titanium, and chrome materials. Some surgeons use customized components to enhance the femur fit. <br/> <br/>Hip replacement surgeons sometimes use a 'hybrid' technique consisting of the cemented femur and an uncemented acetabular part. Sometimes, the surgeon also uses a special cement or glue to fix the new parts of the hip to the healthy, existing bone - this is referred to as a 'cemented' process. Full recovery post-surgery can take about 3-6 months, depending on several factors such as surgery type and the patient's overall health.",
+     
+    },
+      
+  ]}
+  
+ 
+  
+/> 
+<!-- KneeReplacement -->
+<SurgicalTreatment1
+  isAfterContent
+  id='KneeReplacement',
+  title='Knee Replacement',
+  items={[
+    {
+      title: 'Surgical Treatment: Knee Replacement',
+      description: "A knee replacement is a surgical process wherein the damaged or worn knee is supplanted with artificial material. A knee is a hinge that provides movement where the thigh meets the lower leg. The process takes around 1 to 1.5 hours to perform, and recovery time differs from one patient to another.  <br/> <br/> A knee encompasses the femur, tibia, and the joint between the patella and the forefront of the femur. One of these parts may be affected by arthritis to severe degrees, and the knee replacement process involves discarding the affected knee surfaces and supplanting them with metal components with a high-density polyethene surface connecting them.",
+     
+    },
+      
+  ]}
+ 
+ 
+  
+/> 
+<!-- SpineSurgery -->
+<SurgicalTreatment1
+  isAfterContent
+  id='SpineSurgery',
+  title='Spine Surgery',
+  items={[
+    {
+      title: 'Surgical Treatment: Spine Surgery',
+      description: "Spondylosis refers to the gradual deterioration of the disc between the backbone vertebrae. Spondylosis occurs due to age-related wear and tear, just like osteoarthritis. This is common and affects 40-50% of people over 40. Here, the discs flatten, losing their average height. And the disc height usually separates the disc above from the one below. <br/> <br/> Degenerated discs have gotten much thinner and can also develop tiny, rough areas which irritate the surrounding nerves. Severe neck pain and stiffness can result from this. Our doctors at Polaris Healthcare can help you eliminate this pain with an appropriate medical treatment depending on the severity of your pain.",
+      
+    },
+      
+  ]}
+
+ 
+  
+/> 
+
+<!-- SportsInjury -->
+<SurgicalTreatment1
+  isAfterContent
+  id='SportsInjury',
+  title='Sports Injury',
+  items={[
+    {
+      title: 'Surgical Treatment: Sports Injury',
+      description: "Athletes use their physical strength and endurance to achieve goals, and an injury can severely disturb their ability to play and compete at their fullest. Sports injuries can occur due to excess strain on the musculoskeletal system. While sprains, cuts, and bruises are some common and less severe injuries, different sports can cause various injuries that are caused due to various movements. <br/> <br/> At Polaris Healthcare, our orthopaedic experts and surgeons in pune are trained to identify and treat any muscular or skeletal injuries, and we have world-class technologies to help in the diagnostic process. Our neurological team provides you with all-inclusive spinal and brain injury care. Around 10% of sports injuries are spine-related; hence, if you are experiencing back or neck injuries, you can contact our experts to find a cure for your agony.",
+     
+    },
+      
+  ]}
+  
+ 
+  
+/> 
+<!-- Trauma -->
+<SurgicalTreatment1
+  isAfterContent
+  id='Trauma',
+  title='Trauma',
+  items={[
+    {
+      title: 'Surgical Treatment: Trauma',
+      description: "ACL - the anterior cruciate ligament is situated in the front of the knee and is the most commonly injured ligament. ACL is often stretched or torn during an abrupt twisting movement. Basketball & football are sports with a higher risk of ACL injuries.<br/> <br/>PCL - the posterior cruciate ligament is situated at the back of the knee, and again it's a commonly-injured ligament. PCL injury typically happens with abrupt and direct impacts, such as football tackles or car accidents. <br/> <br/>MCL - the medial collateral ligament is situated inside the knee, and this one has injured more often than the LCL - lateral collateral ligament, which is located on the external knee. Here, the injuries are usually caused by a blow to the knee's outer side, like when playing football or hockey. <br/><br/>Knee ligament repair is a solution for a complete knee ligament tear resulting from knee instability. People with torn knees might be unable to do everyday tasks involving twisting the knee. If medical treatments are inadequate, ligament repair surgery might be the answer.",
+     
+    },
+      
+  ]}
+ 
+ 
+  
+/> 
+<!-- Shoulder -->
+<SurgicalTreatment1
+  isAfterContent
+  id='Shoulder',
+  title='Shoulder',
+  items={[
+    {
+      title: 'Surgical Treatment: Shoulder',
+      description: "Shoulder injuries are caused mainly by athletic activities that include excessive, repetitive, and overhead motion. It involves activities such as swimming, tennis, weightlifting, etc. Injuries can happen during everyday activities such as washing walls, hanging curtains, and gardening. Most injuries in the shoulder include the muscles, ligaments, and tendons and not the bones. Athletes are more prone to shoulder injuries. In athletes, shoulder problems can develop gradually due to repetitive, intensive training routines. The shoulder injury is sometimes underestimated because ongoing weakness in the arm or less joint motion will make the pain secondary for patients. If the pain is extensive, you should visit a surgeon and get diagnosed for proper medical aid. If required, an Orthopedic doctor will advise you to undergo shoulder treatment with proper medical care.",
+     
+    },
+      
+  ]}
+ 
+ 
+  
+/> 
+<!-- Elbow -->
+<SurgicalTreatment1
+  isAfterContent
+  id='Elbow',
+  title='Elbow',
+  items={[
+    {
+      title: 'Surgical Treatment: Elbow',
+      description: "The elbow joint is a (synovial fluid) hinge joint with various vital functions such as moving your hand away and towards your body, rotating your forearm and wrists, and bending and straightening the elbow. You can make joint movements with an elbow that comprises bones, ligaments, cartilage, and fluids. Either of these gets harmed, leading to a shoulder injury. If you have severe, feel your hands and arms turn numb, or your performance in sports and range of motion is getting hampered, then the underlying issue is the elbow injury. To get your elbow injury treated, making an appointment to see an orthopedist is the first thing you should do without losing any further time. An Orthopedist may determine whether a surgical option may benefit you after diagnosing your injury. The surgeon will determine the amount or type of damage and then can proceed to repair or treat the wound or injury with proper medical treatment.",
+     
+    },
+      
+  ]}
+ 
+ 
+  
+/> 
+<!-- Arthroscopy -->
+<SurgicalTreatment1
+  isAfterContent
+  id='Arthroscopy',
+  title='Arthroscopy',
+  items={[
+    {
+      title: 'Surgical Treatment: Arthroscopy',
+      description: "Arthroscopy is a surgical process used by orthopedic surgeons to visualize and treat injuries or problems present inside a joint. While performing arthroscopic surgery, an orthopedic surgeon makes a tiny incision in the skin of the patient, then inserts pencil-sized instruments containing a small lens with a lighting system to magnify and illuminate the structures inside the joint. Light gets transmitted by fiber optics to the end of the arthroscope, which is inserted inside the joint. By attaching a miniature camera to the arthroscope, the interior of the joint through this minimal incision gets visible to the surgeon, rather than the larger incision needed for open surgery. After being diagnosed with arthroscopic surgery, you can visit a surgeon to get the adequate treatment required with intensive medical care and support.",
+      
+    },
+      
+  ]}
+ 
+ 
+  
+/> 
+
+<!-- Physiotherapy -->
+
+<!-- non-surgical -->
+<!-- CortisoneInjections -->
+<SurgicalTreatment1
+  isAfterContent
+  id='CortisoneInjections',
+  title='Cortisone Injections',
+  items={[
+    {
+      title: 'Non-Surgical Treatment: Cortisone Injections',
+      description: "Dr Dinesh Choudary does not perform cortisone injections but can advise whether they are suitable or not for you and refer on.<br/> <br/> Short-term complications are uncommon and include lightening of the skin, bleeding, soreness and inflammation. In people with diabetes cortisone can elevate the blood sugar level and cortisone should also be used under careful medical supervision in people with bleeding disorders.<br/> <br/> Facial flushing occurs in one in four patients but only lasts briefly, while sweating, dizziness and insomnia are uncommon side effects.<br/><br/> Whilst cortisone injections are generally well tolerated in most patients, due to side effects, most medical guidelines recommend that cortisone injections are used three or four times a year for non-chronic conditions. The recommended maximum number of injections in patients with chronic conditions is generally one injection every six weeks.",
+      
+    },
+      
+  ]}
+ 
+ 
+  
+/> 
+<!-- IceCompression -->
+<SurgicalTreatment1
+  isAfterContent
+  id='IceCompression',
+  title='Ice Compression',
+  items={[
+    {
+      title: 'Non-Surgical Treatment: Ice Compression',
+      description: "Following your injury, ice compression can be an effective way of reducing swelling and helping blood to clot allowing a quicker recovery and less pain. Ask us about the products we can provide.",
+     
+    },
+      
+  ]}
+ 
+ 
+  
+/> 
+<!-- SynviscOAinjection -->
+<SurgicalTreatment1
+  isAfterContent
+  id='SynviscOAinjection',
+  title='Synvisc-OA injection',
+  items={[
+    {
+      title: 'Non-Surgical Treatment: Synvisc-OA injection',
+      description: "<b>The single injection for arthritis:</b><br/>Synvisc is an injection treatment used in knee patients by Dr Dinesh Choudary and provides up to six months of osteoarthritis knee pain relief with just one injection for many patients.<br/>Before trying this treatment, please tell Dr Dinesh Choudary if you have had an allergic reaction, such as swelling of the face, tongue or throat, respiratory difficulty, rash, itching or hives to Synvisc C.  Also tell Dr Dinesh Choudary if you are allergic to products from birds – such as feathers, eggs or poultry – or if your leg is swollen or infected.<br/>To date, this treatment is recommended for pain relief in knee joints only.<br/><br/><b>Who is the ideal candidate for this treatment?</b><br/>Patients with osteoarthritis of the knee who have tried and failed with other non-surgical treatments including over-the-counter pain medication (such as analgesics like Paracetamol)  may benefit. Speak to Dr Dinesh Choudary to see if you are suitable.<br/><br/><b>How is the treatment administered?</b><br/>This injection is a simple procedure that takes only a few minutes. In studies, patients typically found relief about one month after the injection. It is a good idea to avoid any strenuous sporting or lifting activities after your injection for two days.<br/>After that, you should be able to resume normal activities. It is a good idea to have someone else drive you home after your injection and elevate your leg for the rest of the day.<br/><br/> <b>What are the side effects?</b><br/>Whilst the treatment is generally well tolerated, occasionally patients will have what is called a synovitic reaction, causing pain and swelling in the knees for a few days. Generally, this is treated with anti-inflammatory medication. Alert Dr Dinesh Choudary if you have previously had this condition.",
+    
+    },
+      
+  ]}
+ 
+  
+/> 
+
+<SurgicalTreatment1
+  isAfterContent
+  id='PRPPlateletRichPlasmaTreatment',
+  title='PRP-(Platelet Rich Plasma Treatment)',
+  items={[
+    {
+      title: 'Non-Surgical Treatment: PRP-(Platelet Rich Plasma Treatment)',
+      description: "It is an innovative medical treatment gaining traction in orthopedics. It harnesses the body’s natural healing properties to aid in tissue repair and regeneration. This summary aims to provide an overview of PRP, its applications and the evidence supporting its effectiveness for patients considering this treatment.<br/><br/><b>What is Platelet-Rich Plasma (PRP)?</b><br/>PRP is a concentrated solution derived from the patient’s own blood. It contains a higher concentration of platelets, which are essential for blood clotting and contain growth factors that promote healing. The process involves drawing a small sample of the patient’s blood, which is then centrifuged to separate the platelets from other blood components.<br/><br/><b>Applications in Orthopaedics</b><br/>1. Osteoarthritis:<br/> PRP injections have shown promise in managing osteoarthritis, particularly in the knee and hip joints. Studies suggest that PRP may help reduce pain, improve function, and delay the progression of the disease.<br/>2. Tendon Injuries:<br/> PRP has been utilized in the treatment of various tendon injuries, including those in the Achilles, rotator cuff, and tennis elbow. Clinical evidence suggests that PRP may accelerate healing and enhance tissue quality in these cases.<br/>3. Ligament Injuries:<br/> PRP is being explored as an adjunctive treatment for ligament injuries, such as those in the knee’s anterior cruciate ligament (ACL). Although research is ongoing, initial results are promising.<br/>4. Muscle Injuries:</br> PRP may aid in the recovery of muscle injuries, like strains and tears. It has shown potential in reducing pain and accelerating the healing process.<br/><br/><b>Evidence of effectiveness</b><br/>While research on PRP is ongoing, numerous studies have reported positive outcomes in orthopaedic applications. Clinical trials and systematic reviews have demonstrated benefits in terms of pain reduction, improved function, and enhanced tissue healing.<br/><b>Conclusion</b>Platelet-Rich Plasma is an evolving treatment option in orthopedics, offering a natural approach to tissue repair and regeneration. While research continues to refine its applications, early evidence suggests its potential benefits in managing various musculoskeletal conditions. If you are considering PRP, consult with your orthopaedic surgeon to discuss its suitability for your specific case.<br/><br/>Note: It is important to consult with your orthopeadic surgeon for personalised advice and treatment options based on your individual condition and medical history.",
+    
+    },
+      
+  ]}
+  /> 
+
+ <SurgicalTreatment1
+ isAfterContent
+ id='Physiotherapy',
+ title='Physiotherapy',
+ items={[
+   {
+     title: 'Non-Surgical Treatment: Physiotherapy',
+     description: "Polaris Healthcare provides physiotherapy programs to help the patients recover post-treatment and lead an everyday life like never before. Our team of specialist physiotherapists in Pune treats thousands of patients successfully. At Polaris Healthcare, our experienced physiotherapists are proficient in diagnosing and providing timely treatment. ",
+     
+   },
+     
+ ]}
+ 
+
+ 
+/> 
+  
+
+
+
+</Layout>

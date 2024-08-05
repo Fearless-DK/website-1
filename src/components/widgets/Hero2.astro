@@ -1,0 +1,292 @@
+---
+import Image from '~/components/common/Image.astro';
+import type { CallToAction } from '~/types';
+import Button from '~/components/ui/Button.astro';
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  tagline?: string;
+  content?: string;
+  actions?: string | CallToAction[];
+  actions1?: string | CallToAction[];
+  image?: string | any;
+  image1?: string | any; // TODO: find HTMLElementProps
+  image2?: string | any;
+  image3?: string | any;
+  image4?: string | any;
+  image5?: string | any;
+  image6?: string | any;
+  
+}
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline,
+   content = await Astro.slots.render('content'),
+  actions = await Astro.slots.render('actions'),
+  actions1 = await Astro.slots.render('actions1'),
+  image = await Astro.slots.render('image'),
+  image1 = await Astro.slots.render('image'),  
+  image2 = await Astro.slots.render('image'),  
+  image3 = await Astro.slots.render('image'),  
+  image4 = await Astro.slots.render('image'),  
+  image5 = await Astro.slots.render('image'),  
+  image6 = await Astro.slots.render('image'),  
+  
+} = Astro.props;
+---
+
+<section class="relative md:-mt-[76px] not-prose ">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 ">
+    <div class="pt-0 md:pt-[76px] pointer-events-none "></div>
+    <div class="py-10 md:py-10 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8 ">
+      <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
+        
+        {
+          title && (
+            <h1
+              class=" text-5xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
+              set:html={title}
+            />
+          )
+        }
+        <div class="max-w-3xl mx-auto lg:max-w-none">
+          {subtitle && <p class="text-xl text-muted mb-6 dark:text-slate-300" set:html={subtitle} />}
+
+          {
+            actions && (
+              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl">
+                {Array.isArray(actions) ? (
+                  actions.map((action) => (
+                    <div class="flex w-full sm:w-auto ">
+                      <Button {...(action || {})} class="w-full sm:mb-0 dark:text-[#c4fcfa]" />
+                    </div>
+                  ))
+                ) : (
+                  <Fragment set:html={actions} />
+                )}
+              </div>
+            )
+          }
+           {
+            tagline && (
+              <p
+                class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase "
+               
+                set:html={tagline}
+              />
+            )
+          }
+           {
+            actions1 && (
+              <div class="mt-12 max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl">
+                {Array.isArray(actions1) ? (
+                  actions1.map((action1) => (
+                    <div class="flex w-full sm:w-auto ">
+                      <Button {...(action1 || {})} class="w-full sm:mt-4 dark:text-[#c4fcfa]" />
+                    </div>
+                  ))
+                ) : (
+                  <Fragment set:html={actions1} />
+                )}
+              </div>
+            )
+          }
+         <!-- basis-1/2 bg-[url(~/assets/images/frame1-removebg-preview.png)] dark:bg-[url(~/assets/images/frame4.png)] bg-contain bg-no-repeat p-12 md:p-20 md:pb-20  md:bg-center dark:bg-contain -->
+        </div>
+        {content && <Fragment set:html={content} />}
+      </div>
+      <div class="basis-1/2" >
+        {
+          image && (
+            <div class="mySlides relative ">
+    
+              
+  
+                <Image
+      
+                  class="animate-fadeIn scale-105 mx-auto rounded-full bg-gradient-to-bl from-cyan-300 to-emerald-700 dark:bg-gradient-to-r dark:from-slate-800  dark:to-sky-500 p-5 w-full"
+                  widths={[400, 768, 1024, 2040]}
+                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                  loading="eager"
+                  width={420}
+                  height={420}
+                 
+                  {...image}
+                />
+              <style>
+
+                </style>
+            </div>
+            
+          )
+        }
+         {
+          image1 && (
+            <div class="mySlides relative m-auto max-w-5xl">
+    
+              
+  
+                <Image
+      
+                  class="animate-fadeIn scale-105 mx-auto rounded-full bg-gradient-to-bl from-cyan-300 to-emerald-700 dark:bg-gradient-to-r dark:from-slate-800  dark:to-sky-500 p-5 w-full"
+                  widths={[400, 768, 1024, 2040]}
+                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                  loading="eager"
+                  width={420}
+                  height={420}
+                 
+                  {...image1}
+                />
+              <style>
+                
+                </style>
+            </div>
+            
+          )
+        }
+        {
+          image2 && (
+            <div class="mySlides relative m-auto max-w-5xl">
+    
+              
+  
+                <Image
+      
+                 class="animate-fadeIn scale-105 mx-auto rounded-full bg-gradient-to-bl from-cyan-300 to-emerald-700 dark:bg-gradient-to-r dark:from-slate-800  dark:to-sky-500 p-5 w-full"
+                  widths={[400, 768, 1024, 2040]}
+                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                  loading="eager"
+                  width={420}
+                  height={420}
+                 
+                  {...image2}
+                />
+              <style>
+                
+                </style>
+            </div>
+            
+          )
+        }
+        {
+          image3 && (
+            <div class="mySlides relative m-auto max-w-5xl">
+    
+              
+  
+                <Image
+      
+                  class="animate-fadeIn scale-105 mx-auto rounded-full bg-gradient-to-bl from-cyan-300 to-emerald-700 dark:bg-gradient-to-r dark:from-slate-800  dark:to-sky-500 p-5 w-full"
+                  widths={[400, 768, 1024, 2040]}
+                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                  loading="eager"
+                  width={420}
+                  height={420}
+                 
+                  {...image3}
+                />
+              <style>
+                
+                </style>
+            </div>
+            
+          )
+        }
+        {
+          image4 && (
+            <div class="mySlides relative m-auto max-w-5xl">
+    
+              
+  
+                <Image
+      
+                  class="animate-fadeIn scale-105 mx-auto rounded-full bg-gradient-to-bl from-cyan-300 to-emerald-700 dark:bg-gradient-to-r dark:from-slate-800  dark:to-sky-500 p-5 w-full"
+                  widths={[400, 768, 1024, 2040]}
+                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                  loading="eager"
+                  width={420}
+                  height={420}
+                 
+                  {...image4}
+                />
+              <style>
+                
+                </style>
+            </div>
+            
+          )
+        }
+        {
+          image5 && (
+            <div class="mySlides relative m-auto max-w-5xl">
+    
+              
+  
+                <Image
+      
+                  class="animate-fadeIn scale-105 mx-auto rounded-full bg-gradient-to-bl from-cyan-300 to-emerald-700 dark:bg-gradient-to-r dark:from-slate-800  dark:to-sky-500 p-5 w-full"
+                  widths={[400, 768, 1024, 2040]}
+                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                  loading="eager"
+                  width={420}
+                  height={420}
+                 
+                  {...image5}
+                />
+              <style>
+                
+                </style>
+            </div>
+            
+          )
+        }
+        {
+          image6 && (
+            <div class="mySlides relative m-auto max-w-5xl">
+    
+              
+  
+                <Image
+      
+                  class="animate-fadeIn scale-105 mx-auto rounded-full bg-gradient-to-bl from-cyan-300 to-emerald-700 dark:bg-gradient-to-r dark:from-slate-800  dark:to-sky-500 p-5 w-full"
+                  widths={[400, 768, 1024, 2040]}
+                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                  loading="eager"
+                  width={420}
+                  height={420}
+                 
+                  {...image6}
+                />
+              <style>
+                
+                </style>
+            </div>
+            
+          )
+        }
+        <script>
+          let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}   
+            slides[slideIndex-1].style.display = "block"; 
+            setTimeout(showSlides, 4500); // Change image every 2 seconds
+          }
+          </script>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- rounded-tr-extraLarge rounded-bl-extraLarge rounded-tl-xl rounded-br-xl scale-105 mx-auto rounded-full bg-gradient-to-r from-cyan-300 via-indigo-500 to-sky-700 dark:bg-gradient-to-r dark:from-slate-800 dark:via-amber-300 dark:to-sky-500 shadow-3x1 p-5 w-full -->

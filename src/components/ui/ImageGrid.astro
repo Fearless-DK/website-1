@@ -1,0 +1,43 @@
+---
+import Item from '~/components/ui/ImageGridItem1.astro';
+import type { Post } from '~/types';
+
+export interface Props {
+  post: Array<Post>;
+}
+
+//const { posts } = Astro.props;
+
+const post = [
+  {
+    title: "Shoulder",
+    excerpt: "",
+    image: "~/assets/images/Shoulder.jpg", // Relative or absolute path to the image
+    permalink: "./conditionshome#Shoulder" // Target URL for the post
+  },
+   {
+    title: "Elbow",
+    excerpt: "",
+    image: "~/assets/images/elbow2.jpg", // Relative or absolute path to the image
+    permalink: "./conditionshome#Elbow" // Target URL for the post
+  },
+   {
+    title: "Hips",
+    excerpt: "",
+    image: "~/assets/images/hip.jpg", // Relative or absolute path to the image
+    permalink: "./conditionshome#Hip" // Target URL for the post
+  },
+   {
+    title: "Knee",
+    excerpt: "",
+    image: "~/assets/images/knee.jpg", // Relative or absolute path to the image
+    permalink: "./conditionshome#Knee" // Target URL for the post
+  },
+
+]
+---
+
+<div class="grid gap-6 row-gap-5 md:grid-cols-2 lg:grid-cols-4 -mb-6 ">
+  
+{post.map((post) => <Item post={post} />)}
+</div>

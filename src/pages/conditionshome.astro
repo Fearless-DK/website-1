@@ -1,0 +1,1585 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/ContentwithLink.astro';
+import Features2 from '~/components/widgets/Features2withlink.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+
+import FAQs from '~/components/widgets/FAQs.astro';
+
+
+const metadata = {
+  title: 'ArthroSurgeon Dr. Dinesh Choudary-Conditions',
+  ignoreTitleTemplate: true,
+};
+
+ //Conditions QA data
+const conditioncategory="Shoulder Conditions";
+const conditionname="Arthritis";
+
+const qadata = [
+        
+      ]
+
+---
+
+<Layout metadata={metadata}>
+  <Features2
+
+  columns={4}
+  items={[
+    {
+      title: 'Shoulder Conditions',
+      description: '',
+      callToAction: {
+       href: '#Shoulder',
+      }
+      
+    },
+    {
+      title: 'Elbow Conditions',
+      description:'',
+         callToAction: {
+       href: '#Elbow',
+      }
+    },
+    {
+      title: 'Hip Conditions',
+      description: '',
+      callToAction: {
+       href: '#Hip',
+      }
+      
+    },
+    {
+      title: 'Knee Conditions',
+      description:'',
+         callToAction: {
+       href: '#Knee',
+      }
+    },
+  ]}
+/>
+
+
+  <!-- Shoulder Widget **************** -->
+  <h3 class=" text-center  text-3xl font-bold tracking-tight  sm:text-4xl mb-2 text" id="Shoulder">Shoulder Conditions</h3>
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Arthritis',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#sc-arthritis',
+        }
+      },
+      {
+        title: 'Arthroscopy',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#sc-Arthroscopy',
+        }
+        
+      },
+      {
+        title: 'Biceps Tendon Tear',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#sc-Biceps',
+        }
+      },
+      {
+        title: 'Emergency and Sporting Injuries',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#sc-Emergency',
+        }
+      },
+      {
+        title: 'Fractures',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+         callToAction: {
+         href: '#sc-Fractures',
+        }
+      },
+      {
+        title: 'Frozen Shoulder',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#sc-Frozen',
+        }
+      },
+      {
+        title: 'Labral Tear',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#sc-labraltear',
+        }
+        
+      },
+      {
+        title: 'Rotator Cuff Tear',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#sc-rotatorcufftear',
+        }
+      },
+      {
+        title: 'Shoulder Instability',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#sc-shoulderinstability',
+        }
+        
+      },
+      {
+        title: 'Shoulder Dislocation',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#sc-shoulderdislocation',
+        }
+      },
+      
+    ]}
+    
+  >
+  <!-- image={{
+    src: '~/assets/images/Shoulder.jpg',
+    alt: 'Shoulder Conditions',
+  }} -->
+     
+    
+  </Content>
+
+
+ <!-- Elbow Widget **************** -->
+ <h3 class="text-center text-3xl font-bold tracking-tight sm:text-4xl mb-2" id="Elbow">Elbow Conditions</h3>
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Arthritis',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+          callToAction: {
+          href: '#ec-arthritis',
+        }
+      },
+      {
+        title: 'Arthroscopy',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+         callToAction: {
+         href: '#ec-arthroscopy',
+        }
+      },
+      {
+        title: 'Biceps Tear (Distal Biceps Repair)',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+         callToAction: {
+         href: '#ec-bicepstear',
+        }
+      },
+      {
+        title: 'Lateral Epicondylitis (Tennis Elbow)',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+         callToAction: {
+         href: '#ec-lateralepicondylitis',
+        }
+      },
+      {
+        title: 'Gaming Injuries',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+         callToAction: {
+         href: '#ec-gaminginjuries',
+        }
+      },
+      
+    ]}
+    
+  >
+    <!-- image={{
+      src: '~/assets/images/elbow2.jpg',
+      alt: 'Elbow Conditions',
+    }}
+      <Fragment slot="content">
+      <h3 class=" text-2xl font-bold tracking-tight dark: sm:text-3xl mb-2" id="Elbow">Elbow Conditions</h3>
+    </Fragment> -->
+  </Content>
+
+
+  <!-- Hip Widget **************** -->
+  <h3 class=" text-center  text-3xl font-bold tracking-tight  sm:text-4xl mb-2" id="Hip">Hip Conditions</h3>
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Femoroacetabular Impingement (FAI)',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+         callToAction: {
+         href: '#hc-femoroacetabularimpingement-fai',
+        }
+      },
+      {
+        title: 'Hip Bursitis',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+         callToAction: {
+         href: '#hc-hipbursitis',
+        }
+        
+      },
+      {
+        title: 'Hip Dislocation',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+         callToAction: {
+         href: '#hc-hipdislocation',
+        }
+      },
+      {
+        title: 'Hip Strains',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#hc-hipstrains',
+        }
+      },
+      {
+        title: 'Snapping Hip',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#hc-snappinghip',
+        }
+      },
+      {
+        title: 'Hip Arthoscopy',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#hc-hiparthoscopy',
+        }
+      },
+      
+      
+    ]}
+   
+  >
+    <!--  image={{
+      src: '~/assets/images/hip.jpg',
+      alt: 'Hip Conditions',
+    }}
+      <Fragment slot="content">
+      <h3 class=" text-2xl font-bold tracking-tight dark: sm:text-3xl mb-2" id="Hip">Hip Conditions</h3>
+    </Fragment> -->
+  </Content>
+
+
+<!-- Knee Widget **************** -->
+<h3 class="text-center  text-3xl font-bold tracking-tight  sm:text-4xl mb-2 " id="Knee">Knee Conditions</h3>
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Arthritis',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-arthritis',
+        }
+      },
+      {
+        title: 'ACL (ACL Reconstruction)',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-aclreconstruction',
+        }
+      },
+      {
+        title: 'Arthoscopy',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-arthoscopy',
+        }
+      },
+      {
+        title: 'Discoid Meniscus',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-discoidmeniscus',
+        }
+      },
+      {
+        title: 'Fractures',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-fractures',
+        }
+      },
+      {
+        title: 'Knee Dislocation (Multiple Ligament Reconstruction)',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-kneedislocation-multipleligamentreconstruction',
+        }
+      },
+      {
+        title: 'Knee Joint Replacement',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-kneejointreplacement',
+        }
+      },
+      {
+        title: 'Patellarfemoral Pain Syndrome (Runners Knee)',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-paterllarfemoralpainsyndrome-runnersknee',
+        }
+      },
+      {
+        title: 'Patellar Instability (Medial Patellafemoral Ligament Reconstruction)',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-patellarinstability',
+        }
+      },
+      {
+        title: 'Meniscal Tear',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-meniscaltear',
+        }
+      },
+      {
+        title: 'PSI (Patient Specific Implant)',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-psi',
+        }
+      },
+      {
+        title: 'Quadriceps Tendon Tear',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-quadricepstendontear',
+        }
+      },
+      {
+        title: 'Shin Splints',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-shinsplints',
+        }
+      },
+
+      {
+        title: 'Osgood-Schlatter Disease',
+        description: '',
+        icon: 'tabler:medical-cross-circle',
+        callToAction: {
+         href: '#kc-osgood',
+        }
+      },
+      
+      
+    ]}
+   
+  >
+    <!--  image={{
+      src: '~/assets/images/knee.jpg',
+      alt: 'Knee Conditions',
+    }}
+      <Fragment slot="content">
+      <h3 class=" text-2xl font-bold tracking-tight dark: sm:text-3xl mb-2" id="Knee">Knee Conditions</h3>
+    </Fragment> -->
+  </Content>
+
+
+ 
+
+
+
+
+
+<!-- FAQs Widget ******************* -->
+<!-- Arthritis -->
+  <FAQs
+    id="sc-arthritis"
+    title="Shoulder Conditions : Arthritis"
+    subtitle=""
+    tagline=""
+    classes={{ container: 'max-w-5xl',title: '', }}
+    items={[{
+
+      title: 'How does shoulder arthritis develop?',
+      description: ' Shoulder arthritis is usually the result of the gradual use of cartilage. Cartilage is present in every joint in the body; It covers the bone surface inside the joint, similar to Teflon on ball bearings. Cartilage is living tissue with a thickness of 2 to 3 millimetres – about one or two thick layers of cardboard. It softens contact between bones. If the cartilage is intact, it can make many turns without the surface’s wear because it is smooth.',
+        },
+        {
+
+      title: 'What are the symptoms of shoulder arthritis?',
+      description: 'Pain which is aggravated by activity and progressively worsens,<br/> A deep aching pain in the joint <br/> Difficulty lifting arms to comb hair or reach to a shelf <br/> Clicking and grinding sounds may also be noticeable as you move your shoulder <br/> Difficulty sleeping due to shoulder pain<br/> Morning stiffness <br/> If the glenohumeral shoulder joint is affected<br/> the pain is centred in the back of the shoulder and may intensify with changes in the weather<br/> Arthritis relating to the acromioclavicular (AC) joint is focused on the top of the shoulder and this pain can sometimes travel to the side of the neck<br/> Someone with rheumatoid arthritis or inflammatory arthritis may have sternoclavicular joint involvement and pain in the base of the neck',
+        },
+        {
+      
+      title: 'What are the signs I may be ready for a shoulder replacement due to arthritis?',
+      description: ' X-rays show bone on bone, CT scans show significant arthritis (generally Dr likes to see you with imaging) <br/> Can’t sleep due to pain and has tried other non-surgical strategies such as anti-inflammatory medications <br/> physiotherapy and cortisone treatments  without success <br/> There is reduced quality of life and independence.<br/> Washing, reaching tasks and getting dressed are difficult , There is loss of motion and weakness in the shoulder',
+        },
+        {
+      
+      title: 'What is the surgical treatment for shoulder arthritis? ',
+      description: ' If, after non-surgical treatments such as cortisone, physiotherapy and medication do not relieve pain, surgical treatments may be very helpful in helping  improve pain and help you return to work, sport and living again <br/> Advanced arthritis of the shoulder can be treated with a shoulder replacement (arthroplasty). <br/> In this procedure, the damaged parts of the shoulder joint are removed and replaced with artificial components called prostheses <br/> It is important you keep your shoulder moving after surgery',
+        },
+        ]}
+  />
+
+  <!-- Arthroscopy -->
+
+  <FAQs
+    id="sc-Arthroscopy"
+    title="Shoulder Conditions : Arthroscopy"
+    subtitle=""
+    tagline=""
+    classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+    items={[{
+
+      title: 'What is a shoulder arthroscopy?',
+      description: "It Also called keyhole or minimally invasive surgery, arthroscopic surgery is a simple day stay procedure which involves Dr using a special instrument known as an arthroscope.<br/> The arthroscope allows Dr to look into your joint via a very small incision (usually less than 1cm) without having to open the joint up.<br/> With fibre-optic light and a magnifying glass, the arthroscope provides a very accurate view of your joint to determine what needs a clean up, repair or reconstruction.A miniscule camera simultaneously transmits images of your joint to a TV monitor for Dr to view",
+        },
+        {
+
+      title: 'What conditions is arthroscopy used to diagnose and treat?',
+      description: 'Arthroscopy is useful for many acute sports and work injuries including :',
+      description1:" Shoulder ArthritisShoulder <br/>Instability<br/> Rotator Cuff Tears <br/> Subacromial Decompression (shoulder impingement)<br/> Frozen Shoulder <br/>Removal of loose bodies floating around the joint<br/> SLAP lesions <br/> Biceps tendonitis/tears",
+        },
+        {
+      
+      title: 'What are the benefits?',
+      description: 'Day surgery, so there’s no need to stay in hospital for lengthy periods Optimal recovery due to less invasive procedures Less risk of infection or after care issues',
+        },
+        ]}
+  />
+
+  <!-- Biceps -->
+
+  <FAQs
+    id="sc-Biceps"
+    title="Shoulder Conditions :Biceps Tendon Tear"
+    subtitle=""
+    tagline=""
+    classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+    items={[{
+
+      title: 'What is a biceps tendon tear?',
+      description: "The biceps muscles allow you to bend the elbow and pronate (rotate) the arm. A biceps tear occurs when there is a tear or break in the tendon that connects your biceps muscle in the upper arm to your shoulder or elbow <br/> The biceps muscle at the shoulder has two tendons; a long head and a short head. Then at the distal end (elbow end) there is one tendon which crosses the elbow <br/> Proximal biceps tendon tears can be partial or complete and most often associated with incomplete tears of the long head of biceps tendon <br/> A complete rupture will result in a “Popeye Deformity” where the bicep bunches up and bulges out like Popeye’s arms",
+        },
+        {
+
+      title: 'What are the symptoms of a proximal biceps tear v symptoms of a distal biceps tendon tear?',
+      description: 'Both may have popping sounds at injury , Pain, tenderness and weakness at the shoulder or elbow <br/> Trouble with lifting any weight when using the arm <br/> Bruising bulging above the elbow (proximal) <br/> Sharp and sudden upper arm pain (proximal) or at the front of the elbow (distal)',
+     
+        },
+        {
+      
+      title: 'What is the treatment for a Proximal or Distal biceps tendon tear?',
+      description: 'While you may be able to live with a Popeye deformity of a proximal biceps tendon tear<br/> a distal biceps tendon tear needs prompt treatment as the distal biceps tendon can retract from the bone and surgical repair may not be possible if left for more than 4 weeks <br/> Permanent weakness can occur if the tendon is not repaired surgically and a deformed and high riding biceps muscle can cause you to lose more than half of your elbow strength <br/> For these reasons, surgical repair is most effective within the first two weeks of symptoms. There is about a 3 month recovery post surgery',
+        },
+        ]}
+  />
+
+  <!-- Emergency -->
+
+  <FAQs
+    id="sc-Emergency"
+    title="Shoulder Conditions : Emergency and Sporting Injuries"
+    subtitle=""
+    tagline=""
+    classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+    items={[{
+
+      title: 'Reasons and Treatment for Sporting Injuries',
+      description: "Shoulder injuries commonly occur as an overuse problem during throwing sports such as baseball , cricket and swimming or as a direct impact injury during a fall in collision sports such as rugby, football,etc.",
+      description1:"During these matches, acute first aid treatment is usually performed by onsite physiotherapists or by a nearby hospital emergency department or a GP , Injuries are usually splinted using a sling and it is important to reduce swelling with ice and elevation where possible , Once imaging has been performed definitive treatment can be decided on the sooner the better. The treatment may be non-surgical or surgical."
+        },
+        
+        ]}
+  />
+
+  <!-- Fractures -->
+
+  <FAQs
+  id="sc-Fractures"
+  title="Shoulder Conditions : Fractures"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[{
+
+    title: 'What are the symptoms of a shoulder fracture? ',
+    description: "Fractures of the shoulder are common injuries and frequently can be treated non-surgically, but sometimes require surgery , They can occur as a result of a high-energy injury in a strong bone or a low energy injury in weak bone , Initial first aid treatment includes pain relief and a sling to rest the shoulder , Ice and compression should be used to reduce the swelling and imaging performed to decide on treatment , Most injuries can be treated conservatively with a sling and physiotherapy usually for around 2 months , Sometimes, due to deformity or poor healing, surgery is needed to reduce the fractured bone fragments and secure them to allow early movement , It is important that early movement occurs after surgery or injury as otherwise the development of a frozen shoulder can occur.",
+      },
+      {
+
+    title: 'What are the different types of shoulder fractures?',
+    description: 'Collarbone fracture (clavicle) , Scapula or Shoulder Blade fractures , Upper Arm or Proximal Humerus Fracture',
+    description1:'Collarbone fracture (clavicle) :  A clavicle fracture is also known as a broken collar bone , Broken collar bones are very common and are usually caused by a direct blow to the bone itself or from falling on an outstretched arm , X-ray will confirm the severity of the break , Non-displaced fractures can heal without surgery, whereas displaced fractures may  require surgery depending on how displaced they are . ("Scapula or Shoulder Blade fractures"): Shoulder blade fractures are very uncommon , Typically shoulder blade fractures occur in the lower or inferior aspect of the bone , Many of these fractures can be treated without surgery , Symptoms include extreme pain and swelling close to the site of injury . (" Upper Arm or Proximal Humerus Fracture") : These kinds of fractures frequently occur in elderly people when there is a fall from an outstretched arm , A fall can be a simple fall from standing in the elderly to a more vigorous fall from a bike in a younger person , They are commonly seen as osteoporotic or weak bone injuries in older people , While many proximal humeral fractures may not need surgery, when they involve the joint they may be better treated with surgery , It is always best to get the right advice for your proximal humeral fracture.'
+   
+      },
+
+      ]}
+/>
+
+<!-- Frozen -->
+
+<FAQs
+  id="sc-Frozen"
+  title="Shoulder Conditions : Frozen Shoulder"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[{
+
+    title: 'What is a frozen shoulder? ',
+    description: "Frozen shoulder (adhesive capsulitis) is a painful stiffness of the shoulder that often occurs between the ages of 40 and 60 and is more common in women.",
+      },
+      {
+
+    title: ' What are the symptoms of frozen shoulder?',
+    description: 'Pain and stiffness makes it difficult to carry out a full range of normal shoulder movements , Symptoms vary from mild to excruciating where it may not be possible to move the shoulder at all , There is generally a particular difficulty moving the arms away from the body outwards (external rotation) and reaching behind the back ,  Persistent, deep aching shoulder pain that does not go away , Difficulty bathing, dressing, driving , Sleep is very uncomfortable , The condition is usually self-limiting, often resolving or “thawing” out, over a 2 year period , Pain in either shoulder. In about 20 percent of cases the condition also develops in the other shoulder , It is much more common for the second frozen shoulder to occur months or years after the first. However in a very small number of people frozen shoulders can occur in both shoulders at the same time.',
+   
+      },
+      {
+
+title: 'Who gets frozen shoulder? ',
+description: "People with diabetes and thyroid conditions are thought to be more likely to develop frozen shoulder so you should discuss blood tests with your GP if you develop a frozen shoulder and suspect either of these conditions are at play or if there is a family history of these conditions , Neck issues have also been implicated in frozen shoulder , Menopause is also a factor for frozen shoulder, which has been dubbed “fifties” shoulder.",
+  },
+  {
+
+title: 'What does frozen shoulder surgery involve?  ',
+description: "Most frozen shoulder are treated non-surgically , However once a diagnosis has been made, (and if the pain is severe and prolonged), Dr may recommend an arthroscopic capsular release to speed up recovery ,  During this procedure, the scarred capsule is divided or released to allow full shoulder movement ,  Although this is a day surgical procedure, there is usually a 12-week period of physiotherapy required afterwards to ensure it does not refreeze.",
+  },
+
+      ]}
+/>
+
+<!-- labraltear -->
+
+<FAQs
+  id="sc-labraltear"
+  title="Shoulder Conditions : labral tear"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[{
+
+    title: 'What is a labral tear? ',
+    description: "A shoulder joint labral tear is an injury to the labrum of the shoulder, or to the fibrous ring surrounding the glenoid or socket of the shoulder.When the labrum (made of fibrous cartilage tissue) is torn, it can make the shoulder painful with overhead actions.Labral tears are often caused by:",
+    description1:' Falling on an outstretched arm , Falling on a shoulder , Holding a steering wheel in a car accident , Lifting heavy objects repeatedly or too suddenly , Doing a lot of overhead activities , such as throwing a baseball , Degeneration with age '
+      },
+      {
+
+    title: 'What are the different types of labral tears?',
+    description: 'A labral tear above the middle of the socket is called a SLAP Tear , Slap tears occur at the top of the shoulder (11 O’clock to 1 O’clock) , If the tear is at the front of the shoulder, it may be called a Bankart Tear  (3 O’clock to 6 O’clock) , When the tear is at the back of the shoulder (6 o’clock to 11 o’clock it may be called Reverse Bankart lesion , This implies ligament are also involved , Sometimes tears occur in combination and these tears are called 360 degree tears',
+   
+      },
+      {
+
+title: 'What are the sytmptoms of a labral tear? ',
+description: "Pain with overhead movements like throwing a ball , Popping, clicking or catching in the shoulder , Pain when you move your arm over your head , Weakness or instability in the shoulder , People often have a hard time describing or pinpointing where the pain is or describe it as an “aching” pain",
+  },
+  {
+
+title: 'What is the treatment for a labral tear? ',
+description: "Usually, they are not operative, but a significant labral shoulder tear may need surgery for the best outcome and function , This is generally done via a minimally invasive procedure known as arthroscopy, which can be done as a day surgery , Physiotherapy will be required post surgery",
+  },
+
+      ]}
+/>
+<!-- rotatorcufftear -->
+<FAQs
+  id="sc-rotatorcufftear"
+  title="Shoulder Conditions :Rotator Cuff Tear"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[{
+
+    title: 'What are the symptoms of a rotator cuff tear or rotator cuff injury of the shoulder? ',
+    description: "Swelling and pain in the front of the shoulder and side of the arm , Pain felt when raising or lowering the arm , A clicking sound when raising the arm , Weakness in the affected arm , Pain that causes you to wake from sleep , Pain when reaching behind the back",
+    
+      },
+      {
+
+    title: 'What is the treatment for a rotator cuff tear?',
+    description: 'Steroid injections, anti-inflammatory medication and physical therapy may all be useful in the treatment of rotator cuff tears , For partial tears, good function can often be achieved without surgery, however full rotator cuff tears almost always need surgery , If you are active and use your arm for overhead work or sports, and have pain, then surgery is often recommended because many tears will not heal without surgery and may get larger with time , Surgery is generally recommended if you have persistent pain or weakness in your shoulder that does not improve after several months of non-surgical treatments , Surgery is also generally recommended when the tear is large (more than 3cm) and often recommended when the tear is caused by a recent, acute injury or getting larger on serial scans.',
+   
+      },
+      {
+
+title: 'What does surgery involve? ',
+description: " During a rotator cuff repair, the tendon is reattached to the tuberosity bone of the humerus from which it has been torn , This is done using suture anchors in a minimally invasive, arthroscopic fashion , Bone spurs can also be removed in a similar fashion to prevent further tendon injury , Being a completely arthroscopic surgery, rotator cuff repair surgery is now a more minor procedure than it used to be and is often done as a day surgical procedure , The recovery however, still generally requires a sling for 6 weeks to protect the repair until it heals. ",
+  },
+
+
+  ]}
+/>
+<!-- sc-shoulderinstability -->
+<FAQs
+  id="sc-shoulderinstability"
+  title="Shoulder Conditions : Shoulder Instability"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[{
+
+    title: 'What is shoulder instability? ',
+    description: "As a ball and socket joint, the shoulder is the most mobile joint in the body, but for every advantage this joint gives us in mobility, it loses in stability , Any disturbance to the normal anatomy of the shoulder structure can cause shoulder instability which increases risk of dislocation  , Previous dislocations can make a shoulder feel unstable.  Athletes are also highly prone to this injury (particularly in sports like baseball, swimming and volleyball).  People who are double jointed are more likely to have this condition, due to looseness in the joint.",
+      },
+      {
+
+    title: 'What are the symptoms of shoulder instability?',
+    description: 'Pain caused by shoulder injury .  The shoulder joint feeling “loose” as if the ball is falling out of the socket , Repeated shoulder dislocations , Repeated instances of the shoulder giving out',
+   
+      },
+      {
+
+title: 'What if shoulder instability becomes “chronic”? ',
+description: "Once a shoulder has been injured by dislocation, it is highly vulnerable to repeat episodes. When a shoulder has dislocated multiple times it becomes loose as the ligaments are stretched and may dislocate spontaneously.",
+  },
+  {
+
+title: 'What is the treatment for shoulder instability?',
+description: "The good news is that this condition can frequently be treated with an Arthroscopy – a minimally invasive day procedure.  Surgical stabilisation (via arthroscopy) involves repairing the torn ligaments.  As it is usually a day surgical procedure – today it is considered a significantly more minor procedure than it used to be.  The recovery however still often requires a sling for 6 weeks to protect the repair until it heals.",
+  },
+
+      ]}
+/>
+
+<!-- sc-shoulderdislocation -->
+<FAQs
+  id="sc-shoulderdislocation"
+  title="Shoulder Conditions : Shoulder Dislocation"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[{
+
+    title: 'What are the symptoms of shoulder dislocation? ',
+    description: "Pain that is significant, acute and sudden after an injury , A feeling that the shoulder is “slipping out of its socket” when moving your arm outward from your body (external rotation and abduction) , A visible deformity of the shoulder , Inability to use the injured arm effectively , Muscle spasms and numbness or tingling of the arm , Dislocations can be described as partial (subluxed), complete, anterior (front), posterior (back) or multi-directional . In some cases, the head of the humerus may fracture when it dislocates, this is called a Hill-Sachs lesion.",
+      },
+      {
+
+    title: 'What is the usual treatment for shoulder dislocation?',
+    description: 'Usually the patient presents to the ER and emergency staff put the arm back in its socket and the patient is given intravenous medicine to help . x-rays are taken to confirm the shoulder is placed correctly and the shoulder is then placed in a sling. Additional treatment at a later date is based on the patient’s age, evidence of persistent problems with the shoulder going out of place, and the underlying associated soft-tissue injury (either to the rotator cuff or the capsulolabral complex). Whilst many dislocations don’t require surgery, patients who are active and younger quite often require surgery because a dislocation at this age generally means persistent instability and repeat dislocations. Surgery involves repair of the torn soft tissues. Most shoulder dislocations occur as a result of a sporting injury, and they tend to be more common in males. Non-surgical treatments include ice to reduce swelling, slinging in a safe position, anti-inflammatory tablets and physiotherapy. Try not to move the arm until the shoulder is put back in place, as this can cause damage to joints and nerves.',
+   
+      },
+    
+      ]}
+/>
+
+<!-- elbow condition -->
+<!-- ec-arthritis -->
+<FAQs
+  id="ec-arthritis"
+  title="Elbow Conditions : Arthritis"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What does Elbow Arthroscopic Surgery involve?',
+    description: 'Arthroscopic elbow surgery is designed at improving elbow stiffness and end range pain but not curing arthritis. It is a day procedure where Dr can look inside the joint using a small cut with instruments the width of a pencil. Spurs and loose bodies are removed and tight adherent capsules are released. The benefit of arthroscopic surgery includes a quicker recovery as only small punctures through the skin are used to access the joint as opposed to formal, open incisions. Improved elbow range is obtained under anaesthesia but extensive post operative rehabilitation is needed to maintain this. Following surgery, a period of continuous elbow range of motion with a continuous passive motion (CPM) machine is required to maintain motion and prevent recurrent scarring.',
+   
+      },
+      {
+
+title: 'What does Elbow Replacement Surgery involve? ',
+description: "Elbow replacement surgery is usually done if your doctor has assessed your elbow as being badly damaged by osteoarthritis or if the pain is persistent and severe and you cannot use your arm. Surgery may also be appropriate for patients with rheumatoid arthritis, a badly broken bone in the upper or lower arm near the elbow, badly damaged or torn elbow tissues, a tumor or a very stiff elbow. During a total elbow replacement procedure, the damaged parts of the elbow-hinged joint is removed and replaced with artificial components called prostheses. Replacement options include a hemiarthoplasty where part of the joint is replaced not the olecranon (the bony point of the elbow); a total elbow arthroplasty where the end of the humerus and olecranon is replaced with a metal and plastic hinged joint. The decision as to which prosthesis is used is dependent on your surgeon, the degree of your arthritis and your age. As the elbow is a much smaller joint than a knee or a hip there is generally a 3kg lifting restriction applied following surgery to prevent the plastic wearing out too soon.",
+  },
+  {
+
+title: 'Typical symptoms of elbow arthritis include:',
+description: "Pain – Generally worse as you rotate the forearm , As the condition progresses pain interrupts sleep during the night , Swelling (more common with rheumatoid arthritis), Instability of the joint , Inability to extend or flex the elbow , Locking and stiffness",
+
+  },
+  
+      ]}
+/>
+
+<!-- ec-arthroscopy -->
+<FAQs
+  id="ec-arthroscopy"
+  title="Elbow Conditions : Arthroscopy"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is elbow arthroscopy?',
+    description: 'Arthroscopic elbow surgery is a day procedure where Dr can look inside the joint using a small cut with instruments the width of a pencil, Spurs and loose bodies are removed and tight adherent capsules are released, The benefit of arthroscopic surgery includes a quicker recovery as only small punctures through the skin are used to access the joint as opposed to formal, open incisions.',
+   
+      },
+     
+  {
+
+title: 'What happens after the procedure? ',
+description: "Improved elbow range is obtained under anaesthesia but extensive post operative rehabilitation is needed to maintain this, Following surgery, a period of continuous elbow range of motion with a continuous passive motion (CPM) machine is required to maintain motion and prevent recurrent scarring, The CPM machine is used in hospital for around 3 days continuously and for most of the day for up to a month after, A physiotherapist is an important part of your post-operative rehabilitation.",
+
+  },
+  {
+
+title: 'What conditions is elbow arthroscopy useful for? ',
+description: "Elbow arthroscopy can be useful in diagnosis and treatment of arthritis, loose bodies in the joint, tennis elbow, stiffness and fractures.",
+  },
+  
+      ]}
+/>
+
+<!-- bicepstear -->
+<FAQs
+  id="ec-bicepstear"
+  title="Elbow Conditions : Biceps Tear (Distal Biceps Repair)"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is Biceps-tear?',
+    description: 'The biceps muscle has two tendons which insert into the shoulder, These muscles allow you to bend the elbow and rotate the arm, A biceps tendon tear at the elbow is generally less common than a biceps tendon tear at the shoulder.',
+   
+      },
+     
+  {
+
+title: 'What are the symptoms? ',
+description: "Popping sounds at injury, This kind of injury often occurs on heavy lifting. Pain, tenderness and weakness at the shoulder or elbow, Trouble turning the palms face up or face down, Bruising, Bulging above the elbow. Sharp and sudden pain near the elbow",
+
+  },
+  {
+
+title: 'What is the treatment?',
+description: "A severe biceps tendon tear needs prompt treatment as the distal biceps tendon cannot regrow back to the bone and heal itself. Permanent weakness can occur if the tendon is not repaired surgically and a deformed and high riding biceps muscle can cause you to lose more than half of your elbow strength. For these reasons, surgical repair is most effective within first two weeks of symptoms. There is about a 3 month recovery post surgery.",
+  },
+  
+      ]}
+/>
+
+<!-- Lateral Epicondylitis (Tennis Elbow) -->
+<FAQs
+  id="ec-lateralepicondylitis"
+  title="Elbow Conditions : Lateral Epicondylitis (Tennis Elbow)"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is Lateral Epicondylitis?',
+    description: 'It is a painful condition that affects the muscles and tendons of the forearm, It is commonly referred to as “tennis elbow” but rarely occurs as a result of tennis these days.',
+   
+      },
+     
+  {
+
+title: 'Symptoms of this condition include: ',
+description: "Tenderness on the outer bony part of the elbow ,Morning stiffness of the elbow with persistent aching ,Soreness in the forearm, Pain worse when grasping or holding an object, The forearm tendons that attach to the outer aspect of the elbow may become inflamed and torn as result of repetitive over extension of the wrist and elbow.",
+
+  },
+  {
+
+title: 'What does surgery involve?',
+description: "In most cases, the micro tears and inflammation settle down and heal with rest but in some recalcitrant cases surgery is required, This involves repairing the torn extensor tendons after excising the degenerate segment and performing a tendon release, Both result in reduced pain and increased grip strength.A sling is required for comfort post-operatively and physiotherapy also.",
+  },
+  
+      ]}
+/>
+
+<!-- ec-gaminginjurie -->
+<FAQs
+  id="ec-gaminginjuries"
+  title="Elbow Conditions : Gaming Injuries"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'Reason for Gaming Injuries:',
+    description: 'E-Sport injuries are becoming increasingly common in Australia as the sport enjoys unprecedented popularity.  some gamers at the keyboard played 10 hours per day or more, Gamer’s Thumb, Elbow Innjuries, Nintendinitis and Cubital Tunnel Syndrome are common injuries. In one case reported in JAMA, a patient who played a puzzle video games 8 hours per day for six weeks ruptured his left extensor pollicis longus which required surgery.',
+   
+      },
+     
+  {
+
+title: 'Recommended treatment for Gaming Injuries ',
+description: "Dr recommends these exercises for gamers :",
+description1:'Place palms face down on flat surface and lift thumbs (x 10), With elbow at sides and arms straight out in front, stretch thumbs out toward the ceiling and then down towards the floor (x 10), In the same position rotate thumb in circles 10 times  (x 10), Limit gaming to 1-2 hours per day and if it hurts, AFK! (away from the keyboard!)',
+
+  }, 
+      ]}
+/>
+
+<!-- Femoroacetabular Impingement (FAI) -->
+<FAQs
+  id="hc-femoroacetabularimpingement-fai"
+  title="Hip Conditions : Femoroacetabular Impingement (FAI)"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is Femoroacetabular Impingement?',
+    description: 'Femoroacetabular Impingement (FMI), also known as hip impingement, is a severe abnormality arising in the hip. People with a femoroacetabular impingement have bone spurs growing on the femur head or the hip socket. These spurs rub together, breaking down the cartilage around the bones. The socket and femur head may rub together, creating an uncomfortable grating of the bones. Because of the excess bone growth, eventually, the hip socket and femur will no longer fit properly together.',
+    description1:'Femoroacetabular impingement causes a cartilage breakdown that creates even more discomfort and can lead to bone decay, significant pain, and osteoarthritis. FMI often requires surgery to repair the bones and restore motion to the affected hip.',
+   
+      },
+     
+  {
+
+title: 'Symptoms of Femoroacetabular Impingement ?',
+description: "People with femoroacetabular impingement typically experience these symptoms:",
+description1:'Pain in your hip, intensified by bending or twisting , Pain in your groin area, Stiffness in your hip, A limp or difficulty moving and walking, Intense jolts of pain in your hip, Ongoing aches in your hip',
+
+  },
+  {
+
+title: 'Femoroacetabular Impingement Non-Surgical Treatment:',
+description: "Some FAI hip patients do not require surgery. Their symptoms can be alleviated by:",
+description1:'Rest - avoiding overuse of the hip and strenuous activities that might exacerbate the sensitive bones (twisting, bending, tying shoes, running, biking, etc.) , Medication - NSAIDs (nonsteroidal anti-inflammatory drugs) help reduce the pain and swelling in your bones and cartilage. Your doctor may suggest prescription strength versions of NSAIDs to expedite relief , Physical therapy - exercises suggested by your orthopaedic specialist to restore your range of motion and relieve pressure and stiffness in your hip.',
+  },
+
+  {
+
+title: 'Femoroacetabular Impingement Surgical Treatment:',
+description: "Severe Cases of FAI hip require surgery to remove dead and damaged tissue and/or reshape the defective bone. Your orthopedic surgeon may opt to repair your hip through arthroscopic surgery or an open procedure. Arthroscopic surgery involves a small incision. The surgeon uses thin tools to remove impaired tissues and cartilage and reshape the bone. During the procedure, the surgeon uses a small camera to see the inside of the hip and guide their tools to the right location, The orthopedic surgeon may opt for an open procedure if your bone growth and tissue damage are severe. The open procedure requires a larger incision to remove the damaged tissue and cartilage and reshape the bone in the hip. Typically, patients undergoing open procedures stay in the hospital overnight, are monitored by their physician and must use crutches for several weeks to keep weight off the hip.",
+  },
+  
+      ]}
+/>
+
+<!-- hipbursitis -->
+<FAQs
+  id="hc-hipbursitis"
+  title="Hip Conditions :Hip Bursitis"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is Hip Bursitis?',
+    description: "Bursae are small fluid-filled sacs that reduce friction between moving parts in your body's joints. Hip bursitis is inflammation or irritation of one or more of the bursae (shown in blue) in your hip.",
+   
+      },
+     
+  {
+
+title: 'Symptoms of Hip Bursitis ?',
+description: "If you have bursitis, the affected joint might:",
+description1:'Feel achy or stiff, Hurt more when you move it or press on it, Look swollen and red, Disabling joint pain, Sudden inability to move a joint, Sharp or shooting pain, especially when you exercise or exert yourself, A fever',
+
+  },
+  {
+
+title: 'Treatment for hip bursitis:',
+description: "Most hip bursitis gets better with simple lifestyle changes. At Aurora, your doctor will explain these changes and any other bursitis treatments that may help. These lifestyle changes and treatments may include:",
+description1:'CHANGING ACTIVITIES: By avoiding activities that cause pain, you can give the bursa a chance to recover. ,HIP SUPPORT: A walking cane, crutches or a hip brace can take some of the pressure off of the hip that hurts. ,PHYSICAL THERAPY: Your physical or occupational therapist and doctor will work together to create a bursitis treatment plan that’s right for you. Sometimes the best way to relieve the pain of bursitis is by finding new ways to move, strengthening muscles or increasing mobility. ,INJECTIONS: In some cases, your doctor may recommend a cortisone injection to relieve pain from bursitis. ,ASPIRATION: When a bursa is very swollen, aspiration (removing excess fluid with a special needle) can provide pain relief. If your doctor suspects the bursa is infected, they may order tests on the fluid from the bursa. ,ARTHROSCOPIC SURGERY: Most people recover from bursitis of the hip without surgery. But if other bursitis treatments aren’t successful, your doctor might suggest removing the bursa with surgery. Usually, your surgeon can remove the bursa with minimally invasive arthroscopy, a technique that uses small instruments and tiny incisions. Because this approach involves less damage to your body’s tissues, you can expect a faster recovery, less chance of infection and the best possible range of motion after surgery.',
+  },
+  
+      ]}
+/>
+
+<!-- hc-hipdislocation -->
+<FAQs
+  id="hc-hipdislocation"
+  title="Hip Conditions :Hip Dislocation"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is Hip Dislocation?',
+    description: "Hip dislocation is a painful event in which the ball joint of your hip comes out of its socket. It usually occurs from a significant traumatic injury.",
+    description1:'A dislocated hip is a medical emergency. It causes acute pain and disables your leg until it’s corrected. It can also cause secondary injuries to the surrounding blood vessels, nerves, ligaments and tissues. Hip dislocation can cause long-term damage, especially if it’s not treated right away.',
+   
+      },
+     
+  {
+
+title: 'Symptoms and Causes of Hip Dislocation?',
+description: "CAUSES: Hip dislocation is usually caused by a traumatic injury. It normally takes a lot of force to push your hip joint out of its socket. A car crash is the most common cause. It can also be caused by a significant fall or a sports or industrial workplace injury.",
+description1:'SYMPTOMS: Acute pain ,Muscle spasms ,Swelling or discoloration at your hip joint ,Leg is rotated inward or outward, Inability to move your leg ,Inability to bear weight on your leg ,Loss of feeling in your hip or foot ,Hip is visibly out of place.',
+
+  },
+  {
+
+title: 'Treatment for hip dislocation:',
+description: "(URGENT CARE: IF YOU SUSPECT YOU HAVE A DISLOCATED HIP, DON’T TRY TO MOVE IT. CALL AN AMBULANCE AND GO TO THE EMERGENCY ROOM. THE INJURY IS ACUTELY PAINFUL AND MUST BE TREATED URGENTLY TO MINIMIZE LONG-TERM DAMAGE) .HIP REDUCTION: To correct your dislocated hip, your healthcare provider will physically move your joint back into place. This is called a reduction. When there aren’t any secondary injuries, the correction can be done externally (“closed reduction”). It takes a lot of force to dislocate a hip joint, and a lot of force to put it back. Your healthcare provider will recommend some combination of anesthetic and sedatives to reduce pain and muscle spasms during the procedure. Sometimes, it’s done under general anesthesia.",
+description1:'SURGERY: If there are significant secondary injuries, the reduction may need to be done in the operating room, where nerves and blood vessels can also be treated. Surgery is also the treatment of choice for infants who’ve suffered hip dislocation, especially as a result of hip dysplasia. In surgery, the joint can be stabilized to prevent future dislocation. This has a 90% success rate with infants.',
+  },
+  
+      ]}
+/>
+<!-- hc-hipstrains -->
+<FAQs
+  id="hc-hipstrains"
+  title="Hip Conditions :Hip Strains"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is Hip Strains?',
+    description: "A hip strain occurs when one of the muscles supporting the hip joint is stretched beyond its limit or torn. Strains may be mild, moderate, or severe, depending on the extent of the injury. A severe strain can limit your ability to move your hip.",
+    description1:'Anyone can experience a hip strain just doing everyday tasks, but strains most often occur during sports activities. Although many hip strains improve with simple home treatment, severe strains may require physical therapy or other medical treatment.',
+   
+      },
+     
+  {
+
+title: 'Symptoms and Causes of Hip Strains?',
+description: "CAUSES: A hip strain can be an acute injury—meaning that it occurs suddenly, such as from a fall, a stretch injury, or a direct blow during contact sports. Hip strains are also caused by overuse—when the muscle or tendon has slowly become weakened over time by repetitive movements.",
+description1:'SYMPTOMS: A muscle strain causes pain and tenderness in the injured area. Other symptoms may include: Increased pain when you use the muscle, Swelling, Limited range of motion, Muscle weakness',
+
+  },
+  {
+
+title: 'Treatment for hip Strains:',
+description: "NON_SURGIGAL TREATMENT: Many hip strains will improve with simple home treatment. Mild strains can be treated with the RICE protocol. RICE stands for rest, ice, compression, and elevation. In addition, nonsteroidal anti-inflammatory drugs, or NSAIDs, such as ibuprofen and naproxen, can help reduce swelling and relieve pain. If the pain persists or it becomes more difficult to move your hip and leg, contact your doctor.",
+description1:'SURGIGAL TREATMENT :Severe injuries in which the tendons are completely avulsed from bone may require surgery in order to return to normal function and movement. Surgery typically involves re-attaching the torn tendon tissue back to the bone ,It is important to know that many severe hip strains are successfully treated without surgery. Your doctor will discuss the treatment options that best meet your individual health needs.',
+  },
+  
+      ]}
+/>
+
+<!-- hc-snappinghip -->
+<FAQs
+  id="hc-snappinghip"
+  title="Hip Conditions : Snapping Hip"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is Snapping Hip?',
+    description: "Snapping hip is a condition in which you feel a snapping sensation or hear a popping sound in your hip when you walk, get up from a chair, or swing your leg around. The snapping sensation occurs when a muscle or tendon (the strong tissue that connects muscle to bone) moves over a bony protrusion in your hip.",
+    description1:'Although snapping hip is usually painless and harmless, the sensation can be annoying. In some cases, snapping hip leads to bursitis, a painful swelling of the fluid-filled sacs that cushion the hip joint.',
+   
+      },
+     
+  {
+
+title: 'Causes of Snapping Hip?',
+description: "Snapping hip is most often the result of tightness in the muscles and tendons surrounding the hip. People who are involved in sports and activities that require repeated bending at the hip are more likely to experience snapping hip. Dancers are especially vulnerable.",
+description1:'Young athletes are also more likely to have snapping hip. This is because tightness in the muscle structures of the hip is common during adolescent growth spurts.',
+
+  },
+  {
+
+title: 'Treatment for Snapping Hip:',
+description: "Initial treatment typically involves a period of rest and modification of activities, apply ice to the affected area, Use nonsteroidal anti-inflammatory drugs, Depending upon the cause of your snapping hip. Most people do not see a doctor for snapping hip unless they experience some pain.",
+description1:'SURGIGAL TREATMENT :In the rare instances that snapping hip does not respond to conservative treatment, your doctor may recommend surgery like HIP ARTHROSCOPY and OPEN PROCEDURE. The type of surgery will depend on the cause of the snapping hip.',
+  },
+  
+      ]}
+/>
+<!-- hc-hiparthoscopy -->
+<FAQs
+  id="hc-hiparthoscopy"
+  title="Hip Conditions : Hip Arthoscopy"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is Hip Arthoscopy?',
+    description: "Hip arthroscopy is a minimally invasive, camera-based surgical procedure that allows for visualization and treatment of a variety of conditions that cause hip pain.Compared to open surgery, arthroscopic surgery has the advantage of using smaller incisions, which often results in less pain and a faster recovery.",
+    description1:'Many disorders that result in hip pain can be managed with nonsurgical treatment such as rest, activity modification, physical therapy, medications (such as NSAIDs), and possible injections that can reduce inflammation. Hip arthroscopy may then be recommended when hip pain is not relived with these nonsurgical options.',
+   
+      },
+     
+  {
+
+title: 'When Hip Arthroscopy Is Recommended ?',
+description: "Your doctor may recommend hip arthroscopy if you have a painful condition that does not respond to nonsurgical treatment.Hip arthroscopy may relieve painful symptoms of many problems that damage the labrum, articular cartilage, or other soft tissues surrounding the joint. Although this damage can result from an injury, other orthopaedic conditions can lead to these problems, including:",
+description1:'Femoroacetabular impingement (FAI), Hip labrum tears, Hip dysplasia, Tendon ruptures or disorders, Synovitis, Loose bodies, Hip joint infection, Snapping hip syndromes',
+
+  },
+  {
+
+title: 'Treatment and recovery process for Arthoscopy:',
+description: "TREATMENT : When conservative measures fail to reduce pain, hip arthroscopy may be the recommended treatment.During the procedure, several small incisions are made in the skin to allow a small camera, or scope, to evaluate the cartilage, bones and other structures of the hip. Other tools to repair damage will also be inserted, as necessary, depending on the diagnosis. The procedure is performed by a U-M Health surgeon who specializes in sports injuries and has formal training in hip arthroscopy.",
+description1:'RECOVERY PROCESS : Patients are typically on crutches for approximately two weeks, with a gradual return to sports or other activities over the next several months. Physical therapy is recommended starting one week after surgery to increase strength and regain range of motion. Common timelines after surgery include return to running at around three months after surgery and return to higher intensity/agility sports approximately five months after surgery. ',
+  },
+  
+      ]}
+/>
+<!-- knee condition -->
+<!-- kc-arthritis -->
+<FAQs
+  id="kc-arthritis"
+  title="knee Conditions : Arthritis"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is knee arthritis? ',
+    description: "Osteoarthritis is a degenerative, disabling “wear and tear”, type of arthritis which sees articular cartilage thin and be replaced by bony spurs over time. Over time, the arthritic knee joint space diminishes and load bearing activity causes severe pain. There is no cure for arthritis and when conservative treatment no longer works surgery remains the most effective option. There are many different types of arthritis the most common type being osteoarthritis which is the degenerative ageing type. The Second most common is rheumatoid arthritis. While osteoarthritis commonly affects men and women RA is 3 times more common in women than men and is an auto-immune condition. ",
+    
+   
+      },
+     
+  {
+
+title: 'What are the symptoms of knee arthritis? ',
+description: "Pain that increases when you are active, or activity related pain. Pain that interferes with daily activities, Swelling, redness and feeling of warmth in the joint due to inflammation. Worse pain in colder weather or when it is about to rain.– Stiffness in the knee, especially in the morning or when sitting for a while, In advanced cases, the knee pain is constant and wakes you up at night, A bowing in or out of your leg, Instability and collapsing on walking. Knee stiffness becomes more restrictive  ",
+
+  },
+  {
+
+title: 'What tests are used to diagnose knee arthritis? ',
+description: "Dr will decide on the best imaging for your arthritis condition. Generally, x-rays (standing (or weight bearing x-rays) can show the impacts of gravity on arthritis and determine if there is rubbing on bone. X-rays of an arthritic knee would typically show a narrowing of the joint space, formation of bone spurs (osteophytes) and changes in bone alignment. Additionally, an MRI may be used to rule out other conditions such as meniscal tears or synovitis or other concurrent conditions which may be exacerbating the arthritis. ",
+  },
+  {
+
+title: 'What is the treatment for knee arthritis? ',
+description: " Non-surgical treatments such as physiotherapy, pain medication and a full course of anti-inflammatories are a good first line of action. Synvisc or cortisone injections organised by Dr may provide relief for several months, However, if this has been tried and is not effective and the arthritis impedes your lifestyle and independence a joint replacement should be considered. Stem cell treatments have not enough efficacy and safety information yet to be used on joints.  ",
+  },
+      ]}
+/>
+<!-- kc-aclreconstruction -->
+<FAQs
+  id="kc-aclreconstruction"
+  title="knee Conditions : ACL (AGL Reconstruction)"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is an anterior cruciate ligament-(AGL) rupture?  ',
+    description: "The anterior cruciate ligament is one of the major knee stabilising ligaments. ACL ruptures occur commonly during sporting activities due to a rapid change in direction, deceleration, or an awkward land from a jump. The anterior cruciate ligament is one of the most injured ligaments of the knee.",
+    
+      },
+      {
+
+title: 'Who gets ACL ruptures? ',
+description: "ACL ruptures are the three most dreaded letters in the alphabet for many sports players, which no doubt Roosters forwards Victor Radley, and Sam Verrills will attest after devastating season ending ACL injuries. A 2021 scientific analysis of the Newcastle Knights found that ACL ruptures were by far the injury that resulted in the longest time away from sport for league players.",
+
+  },
+     
+  {
+
+title: 'What are the symptoms of an ACL rupture? ',
+description: "An ACL rupture is a plant, pivot pop injury – and only occurs when the foot is in contact with the ground. A loud “pop” or a “popping” sensation in the knee is often heard during a pivot. Severe pain like this as experienced by tennis star Bethanie Mattek Sands when she tore her ACL. Difficulty walking . Swelling that begins within a few hours. Loss of range of motion or movement. A feeling of instability or “giving way” with weight bearing.",
+
+  },
+  {
+
+title: 'How is an ACL rupture diagnosed? ',
+description: "Typically the two main tests used to diagnose an ACL rupture are the Lachman’s test shown here and the Pivot Shift test shown here. MRIs are the gold standard of imaging for an ACL injury however sometimes they can miss an ACL rupture if the ligament attaches to the nearby PCL, which is why the tests above help confirm a diagnosis but are not 100% accurate. Suspected ACL injuries should go to a surgeon for assessment initially. Minor tears (sprains) may heal with non-surgical treatments (especially if the patient’s activities do not involve making pivoting movements on the knee). However complete ruptures with instability generally need surgery, which is why a surgeon should be consulted earlier rather than later.",
+  },
+  {
+
+title: 'What happens if ACL surgery is delayed? ',
+description: "A young athlete who returns to pivoting sports such as basketball, tennis, soccer, and football after only having undergone physical therapy rehab despite a confirmed significant ACL rupture with ongoing instability is at high risk for serious injury to the meniscus or cartilage – especially when ACL surgery is delayed. For serious athletes, this is a big concern and new research in Science Daily in 2021, shows that of all ACL injuries, 35% of injured athletes will reinjure the knee when they return to sport. This could result in a longer duration of time away from the game they love than if the ACL rupture was surgically treated in the first place. Early treatment makes a big difference and generally surgical reconstruction is very successful if done before any permanent chondral or meniscal damage occurs.",
+  },
+  {
+
+title: 'What happens in an ACL reconstructive surgery? ',
+description: "The ACL is replaced using either the patient’s own tendon (auto graft from the hamstring or patella tendon) or that of a cadaver’s (allograft). The procedure is usually a day surgical procedure called an arthroscopy. However, the reconstructed ligament matures over a one-year period so return to sport requires intensive rehab and patience. ",
+  },
+      ]}
+/>
+<!-- kc-arthoscopy -->
+<FAQs
+  id="kc-arthoscopy"
+  title="knee Conditions : Arthoscopy"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is a knee arthroscopy? ',
+    description: "Arthroscopic knee surgery is a day surgery where small keyhole incisions are made in the knee (as opposed to formal, open incisions) which generally leads to a quicker recovery and less pain. Arthroscopy is used in evaluating conditions such as torn floating cartilage (meniscus); removing loose bodies (cartilage or bone that has broken off),  patellofemoral (knee-cap) disorders, reconstruction of the Anterior Cruciate Ligament or to wash out infected knees.",
+    
+      },
+      {
+
+title: 'What should I do before surgery? ',
+description: "If you are on any medication including blood thinners or fish oil inform Dr. Also tell hospital staff or Dr of any cuts or abrasions on the operated leg before your surgery as this can increase infection risk. Smoking increases the risk of surgical complications, so do not smoke at least 10 days before surgery and avoid smoking after surgery.  People who quit smoking before knee surgery have 50% less less complications during and post surgery research shows.  ",
+
+  },
+     
+  {
+
+title: 'What happens during a knee arthroscopy? ',
+description: "Also called keyhole or minimally-invasive surgery, arthroscopic surgery is a simple day stay procedure which involves Dr using a special instrument known as an arthroscope, while the patient is under a general anaesthetic. The arthroscope allows Dr to look into your joint via a very small incision (usually less than 1cm) without having to open the knee joint up. With fibre-optic light and a magnifying glass, the arthroscope provides a very accurate view of your joint to determine whether your knee needs a clean up, repair or reconstruction. A miniscule camera sitransmits images of your knee joint to a TV for Dr to watch. ",
+
+  },
+  {
+
+title: 'What are the benefits of arthroscopy? ',
+description: "Day surgery, so there’s no need to stay in hospital for lengthy periods. Optimal recovery due to less invasive procedures. May have less risk of infection or after care issues. Smaller scars than open surgery and less scarring. Physiotherapy is usually required post operatively and recovery takes around a month.",
+  },
+  {
+
+title: 'What conditions is a knee arthroscopy generally used for? ',
+description: "Patellofemoral (knee-cap) disorders. Reconstruction of the Anterior Cruciate Ligament. To wash out infected knees. Meniscal repair. Trimming or reconstruction of damaged ligaments and cartilage. (Note that arthroscopy is NOT recommended for osteoarthritis, where joint replacement is generally the gold standard of treatment after non-surgical approaches have not worked.) ",
+  },
+  {
+
+title: ' What are the risks of knee arthroscopy? ',
+description: "The procedure is very well tolerated as a day surgery and infection risk is low e.g. 1 in 1000. Some bleeding can occur after surgery. However, excessive bleeding may need a repeat procedure to evacuate the blood. Other very rare side effects include nerve damage or numbness, ongoing pain, blood clots,  high fever, severe pain, redness, bad smelling fluid leaking from the wound, or excess swelling around the wound. Smokers have sigfnicantly higher risk of complications and slower healing time ",
+  },
+  {
+
+title: 'What is the recovery like after an arthroscopy?  ',
+description: " You will have some pain, swelling bruising and stiffness after surgery, so take pain medication as prescribed as this medication improves inflammatory response and speeds healing. Apply ice packs to reduce swelling. Use a splint, supportive brace or crutches if recommended by Dr. You may need to take three days off work and avoid vigorous activity for the first four weeks. It can take months for the joint to feel “normal” again. ",
+  },
+      ]}
+/>
+<!-- kc-discoidmeniscus -->
+<FAQs
+  id="kc-discoidmeniscus"
+  title="knee Conditions : Discoid Meniscus"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is a discoid meniscus? ',
+    description: "A discoid meniscus is a larger and abnormally shaped meniscus in the knee that a person is usually born with.People with a discoid meniscus are more prone to injury than those with a normal meniscus.There are 3 types of discoid meniscus, incomplete, complete and hypermobile Wrisberg.",
+    
+      },
+      {
+
+title: 'What are the symptoms of a Discoid Meniscus tear? ',
+description: "Squatting and twisting motions are the typical mechanisms of injury. Pain, stiffness, swelling, catching, locking and limited range of motion. These symptoms are more frequent in the young.",
+
+  },
+     
+  {
+
+title: 'How is a Discoid Meniscal tear diagnosed? ',
+description: "To test for a tear of a discoid meniscus, Dr will examine your knee with various tests. In many cases this will cause a popping or sensation that is audible.X-rays don’t show soft tissue injuries such as the meniscus. However, because the meniscus is thick, they may show a widened space on the x-ray between the femur and tibia on the lateral part of the knee. MRI scans can verify meniscal pathology which may need to be treated with an arthroscopy.",
+
+  },
+  {
+
+title: 'What is the treatment for a Discoid Meniscus tear? ',
+description: "If a discoid meniscal tear is causing locking and pain Dr may recommend an arthroscopy.Frequently these patients will also have concurrent problems of the knee which may make the discoid meniscal tear worse. During the procedure, the discoid meniscus is typically treated with saucerization, where the meniscus is reshaped into a crescent shape and the tear removed. The hypermobile Wrisberg, the rarer form of the injury is stabilised with stitches that sew the meniscus to the joint lining. After surgery crutches, bracing and bandaging may be required. Physical exercise will be recommended by Dr. ",
+  },
+  
+      ]}
+/>
+<!-- kc-fractures -->
+<FAQs
+  id="kc-fractures"
+  title="knee Conditions : Fractures"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is a Knee Fractures? ',
+    description: "A knee fracture is a break or crack in 1 or more of the bones in the knee joint.  Common knee fracture injuries include:  ",
+    description1:'Kneecap fractures ,Distal Femur (thighbone) fracture of the knee, Proximal Tibia (below knee) fracture',
+    
+      },
+      {
+
+title: 'What is Kneecap fractures.And the symptoms and treatment? ',
+description: "Some kneecap fractures can cause just a tiny crack in the bone, while others may cause the bone to shatter or stick out through the skin. This kind of injury generally results from a fall or blow to the knee.",
+description1:'SYMPTOMS : Pain when your knee is touched or when you move your leg.You have swelling and bruising around your knee. You are able to straighten your leg but you cannot bend it. You cannot stand up or put weight on your injured leg. TREATMENT : Treatment can be open reduction-internal fixation surgery where Dr puts the broken bones back together with pins, wires and screws – or removes pieces too damaged to repair. Alternatively the kneecap can be removed (either part or all of the kneecap). After this surgery the knee can still be extended but the extension strength will be weaker. Contact sports should be avoided and stationary bikes and non-weight bearing sports are recommended.',
+
+  },
+     
+  {
+
+title: 'What is Distal Femar (thighbone) fracture of the knee. And the symptoms and treatment?',
+
+description: "Fractures of the top part of the knee are called distal femur fractures. They typically occur in the elderly or in high impact injuries such as a car crash. Distal femur fractures can be described as transverse (straight across), comminuted (many pieces) or intra-articular (extend into the knee joint). Additionally these types of fractures may be open (where the skin is broken), or closed (where the skin is intact). Due to the strong musculature around these fractures, it is common for the muscles to shorten and move the bony fragments away from correct alignment.",
+description1:'SYMPTOMS: Pain with weight bearing, Swelling and bruising, Tenderness to touch, Deformity — the knee may look “out of place” and the leg may appear shorter and crooked. TREATMENT: Surgery is often indicated for distal femur fractures.',
+
+  },
+  {
+
+title: 'What is Proximal Tibia (below knee) fracture. And the symptoms ?',
+description: "Fractures of the bottom part of the knee joint are called proximal tibia fractures. While most of these fractures occur as a result of trauma, they can also occur as a result of stress fracture or compromised bone due to infection, cancer or osteoporosis. Fractures of this region are described as transverse, comminuted or intra-articular. Intra-articular fractures involve fracture of the tibial plateau, a much softer part of the tibia which sometimes presents as a depression in the bone rather than a fracture. Surgical correction and immobilisation are recommended in proximal tibial fractures.",
+description1:'SYMPTOMS : Pain upon movement or when bearing weight, Tenderness, Limited ability to bend the knee, Deformity around or below the knee joint, The foot may be cold and pale (reduced blood supply)',
+  },
+  
+      ]}
+/>
+<!-- kc-kneedislocation-multipleligamentreconstruction -->
+<FAQs
+  id="kc-kneedislocation-multipleligamentreconstruction"
+  title="knee Conditions : Knee Dislocation -(Multiple Ligament Reconstruction)"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is a knee dislocation?',
+    description: "Knee dislocation is a serious condition that requires immediate hospital assessment. These injuries often occur because of a high impact injury such as a car accident or fall from a height. For a knee dislocation to occur, the surrounding ligaments must tear, and generally dislocation occurs with multi-ligament injuries where all four ligaments are involved.",
+    
+      },
+      {
+
+title: 'What are the symptoms of a knee dislocation?',
+description: "Severe pain and swelling, Inability to walk, The usual straight line of the leg will look deformed or angulated, The knee feeling unstable, loose and wobbly, If the knee is dislocated, then serious nerve or arterial damage may have occurred and needs to be promptly assessed, Serious dislocations include loss of pulse below the knee, and loss of feeling below the knee",
+
+  },
+     
+  {
+
+title: 'How is a knee dislocation diagnosed?',
+
+description: "Tests to diagnose a knee dislocation include a physical examination, (which may be done during a reduction where the knee is moved back into position, usually under sedation or with pain medication.), X-rays will be taken to ensure there are no breaks in the bone, An arteriogram (x-ray of the artery) of Doppler Ultrasound may be done to detect arterial injury. Nerve testing will also be done clinically. Can the patient turn the foot inwards and outwards, and move the foot up and down? Any numbness implies significant nerve injury and needs urgent assessment and treatment. MRI scans and MR arteriograms can assess ligament damage and blood flow.",
+
+  },
+  {
+
+title:' What does surgery for knee dislocation involve?',
+description: "The knee needs to be reduced urgently and checked for vascular or neural damage. This may need to be done with some form of anaesthesia. Often the leg is splinted until swelling has reduced sufficiently to allow major surgery. There is no real role for non-operative treatment in this scenario and staged surgeries are often performed to reconstruct the ligaments with a combination of autograft (patient’s own tendon), allograft (tendon from a cadaver) and synthetic grafts (artificial ligaments). See more on multi-ligament injuries here. Recovery is up to a year. If you or your GP suspect a dislocation, please call our office urgently or go to your local hospital emergency department after hours.",
+  },
+  
+      ]}
+/>
+<!-- kc-kneejointreplacement -->
+<FAQs
+  id="kc-kneejointreplacement"
+  title="knee Conditions : Knee Joint Replacement"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'How common is knee joint replacement in Australia?  ',
+    description: "According to the Australia’s National Joint Registry, there were more than 62,624 knee replacements were performed in 2020, with the lowest surgical revision rate on record at 7.3% (down from 8.8% in 2014).",
+    description1: "This suggests that modern surgical techniques are improving every year and that knee replacement has a high efficacy rate for Australians living in pain with arthritis. ",
+      },
+      {
+
+title: 'What does knee joint replacement surgery involve?',
+description: "In general, knee replacement surgery consists of replacing the diseased or damaged joint surfaces of the knee with metal and plastic components shaped to allow continued motion of the knee. Knee replacements are performed for severe arthritic knees and can be unilateral (one knee) or bilateral (two knees). The operation typically involves substantial postoperative pain, and includes vigorous physical rehabilitation. The recovery period may be 6 weeks or longer and may involve the use of mobility aids (e.g. walking frames, canes, crutches) to enable the patient’s return to preoperative mobility. Most patients can safely drive at 6 weeks and gradually increase walking distances in 6 weeks.",
+
+  },
+     
+  {
+
+title: 'What are the specific types of surgical replacement procedures Dr offers?',
+
+description: "UNI-COMPARTMENTAL REPLACEMENT OF THE KNEE: For osteoarthritis sufferers where the problem is limited to only one side of the knee, a uni-compartmental knee replacement is an alternative surgical option to total knee replacement surgery. Your orthopaedic surgeon should be consulted to discuss the extent of your arthritis to determine if a uni-compartmental knee replacement is right for you.",
+description1:'Total Knee Replacement: Advanced arthritis of the knee is very painful. When non surgical treatments like medications and gentle exercise no longer manage pain, a total knee replacement surgery is an effective way to relieve pain, correct deformity and improve function of the knee. Total knee replacement surgery is also called knee arthroplasty. Knee arthroplasty involves implanting new femoral, tibial, tibial insert and patella components into the knee joint. The implants may be cemented or press fit into position. The goal of surgery is to balance the knee so that future wear and tear of the new joint occurs as evenly over the new implant surface as possible. Physiotherapy is a very important part of the post op recovery process of total knee replacement surgery. BIOMET PSI TOTAL KNEE REPLACEMENT: Whilst your choice of a long lasting total knee replacement prosthesis is important, equally it is important to get the positioning and balance right when putting it in. A combination of using the Biomet Vanguard total knee replacement prosthesis and the Signature personalized (PSI) technology, means you get a powerful combination of durability and fit for the maximum possible life of your joint replacement. A joint tailor-made for your body.'
+
+  },
+  {
+
+title:' What conditions require a total knee replacement surgery?',
+description: "Knee replacement is used for:",
+description1:" Osteoarthritis, Rheumatoid arthritis, Psoriatic arthritis, A torn meniscus, Cartilage defects, Ligament tears",
+  },
+  {
+
+title:' What are the no gap and self-pay options for knee replacement surgery? ',
+description: " To avoid waits of over a year in the public system, Dr now offers self-funded knee surgery in the private system see payment options here. For patients who have private health insurance with HCF, Bupa, Medibank Private, Westfund or DefenceHealth. ",
+
+  },
+  {
+
+title:' How do I change a knee dressing after surgery? ',
+description: "Key points to remember here: ",
+description1:" Keep all dressings dry. Tape a garbage bag onto knee for showering. After 24 hours, remove outer pressure bandage with gloves and washed hands. After that remove the padding to reveal clear waterproof dressings which should not be removed. Any sign of pus or redness contact Dr’s rooms immediately or see your GP.   ",
+  },
+  {
+
+title:' Foods that are good to eat after knee surgery?  ',
+description: "Vitamin C helps boost immunity, (think oranges and strawberries), Calcium is a crucial building block for strong bones (milk, yoghurt and cheese), Vitamin D helps us absorb calcium (think fatty fish, tuna, eggs and cheese), The combination of zinc, protein and Vitamin C helps wounds heal faster. Meat, dark poultry and oysters suffice for zinc, Omega 3 has anti-inflammatory effect after a procedure – (think salmon and tuna), After your procedure medications can slow bowels down – (think fibre foods such as oats and wholegrain breads). ",
+
+  },
+  
+      ]}
+/>
+<!-- kc-paterllarfemoralpainsyndrome-runnersknee -->
+<FAQs
+  id="kc-paterllarfemoralpainsyndrome-runnersknee"
+  title="knee Conditions : Paterllarfemoral Pain Syndrome (Runners Knee)"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: ' What is Patellofemoral Pain Syndrome?',
+    description: "The patella or the kneecap sits in a groove at the front of the knee and should glide painlessly up and down through your femoral groove. However, this is not always the case and Patellofemoral Pain Syndrome is one of the most niggling and common knee complaints of both young and old. It is generally caused by poor kneecap alignment and instead of gliding, the kneecap maltracks to one side and grates against the femur.",
+      },
+      {
+
+title: 'What are the symptoms of Patellofemoral Pain Syndrome? ',
+description: "Symptoms of Patellofemoral Pain Syndrome include: Pain around the knee. The pain is felt at the front of the knee, around or behind the kneecap (patella). The pain comes and goes, Stairs, squatting, kneeling, hopping, running are often painful, There may be a grating or grinding feeling or noise when the knee moves, Sometimes there is fullness or swelling around the patella, If the groove or the patella is unusually flat the knee cap may be predisposed to dislocating, Running and jumping sports like netball and football, running, volleyball, skiing and basketball all see a high level of patellofemoral pain, As the condition progresses the pain may be more noticeable while walking and even at rest",
+
+  },
+     
+  {
+
+title: 'What is the treatment for patellofemoral pain?',
+
+description: "The good news is that the majority of patellar pain syndrome patients will benefit from physiotherapy intervention, along with rest, ice and protection or taping. Aim to stay away from kneeling and sporting activities until the knee pain is gone, Apply ice every 20 minutes for several hours at the onset of pain or if your knee feels warm to the touch, Speak to your physiotherapist about taping, mobilisation and other treatments along with techniques to improve your kneecap pain, Surgery will only be required if there if there is continued maltracking despite an extensive course of physiotherapy.",
+
+  },
+ 
+  
+      ]}
+/>
+<!-- kc-patellarinstability -->
+<FAQs
+  id="kc-patellarinstability"
+  title="knee Conditions : Patellar Instability (Medial Patellafemoral Ligament Reconstruction)"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is patellar instability?',
+    description: "When the knee is functioning properly, the kneecap runs smoothly in a groove of the femur called the trochlear groove. If the kneecap slides out of this groove, the kneecap will become unstable, increasing the risk of dislocation, chondral damage and arthritis.Anatomic anomalies like shallow or uneven grooves may cause the kneecap to slide out, or an injury such as a heavy fall or sharp blow to the kneecap may also cause it to dislocate. Bracing and strengthening exercises treat single episode dislocations while surgery is advised to correct multiple dislocation injuries.",
+      },
+      {
+
+title: 'What are the symptoms of patellar instability?',
+description: "Knee pain and swelling, Giving way or instability, Cracking or grinding sounds in the knee when you climb stairs or when you bend the knee, Certain conditions contribute to knee instability including Ehlers-Danlos Syndrome where the ligaments are loose. ",
+
+  },
+     
+  {
+
+title: 'How is patellar instability diagnosed? ',
+
+description: "X-rays can help Dr see if the kneecap is out of place or misaligned.An MRI can help Dr rule out other injuries such as MPFC ligament tears, chondral damage or loose fragments. Non-surgical solutions include bracing for several weeks, and using crutches, anti-inflammatory drugs, rest, elevation and icepacks and physical therapy. More chronic or severe instability will require surgery that is usually done via a knee arthroscopy procedure as a day procedure. Nearly half of all people who dislocate their knee who have non-surgical treatments will dislocate the knee again. ",
+
+  },
+  {
+
+title: 'What does surgery for patellar instability involve?',
+
+description: " Persistent pain should not be ignored as recurrent dislocations can cause damage to the delicate chondral surfaces of the knee joint and predispose to arthritis. There are a number of surgical procedures that may help in this situation depending on your anatomy. A Medial Patellofemoral Ligament Reconstruction (MPLF) is a surgical procedure indicated in patients with more severe patellar instability. An MPFL reconstruction will reconstruct and tighten loose medial ligaments; a lateral release will release tight lateral structures; while a tibial ubercle transfer will realign the whole extensor mechanism by breaking the bone that the patella tendon is attached to and moving it with the patella into a more suitable position. Knee joint replacement is sometimes used to treat severe arthritis and recurrent dislocations that exacerbate patellar instability. Dr will work with you to find the most appropriate surgery and rehabilitation for you.",
+
+  },
+  
+      ]}
+/>
+<!-- kc-meniscaltear -->
+<FAQs
+  id="kc-meniscaltear"
+  title="knee Conditions : Meniscal Tear"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is Meniscal Tear?',
+    description: "Meniscal tears or meniscus tears are one of the most common types of knee injuries. The meniscus is commonly described as cartilage and is the shock absorber of the knee sitting on the tibia and below the femur. It is torn by heavy squatting and twisting movements. There is a medial meniscus and a lateral meniscus making up menisci of the knee. Tears are described as longitudinal tears, parrot beak, bucket handle, transverse, radial, flap, and mixed or complex tears.",
+      },
+      {
+
+title: 'What are the symptoms of a meniscal tear?',
+description: "Pain especially when twisting or rotating the knee, Swelling, Catching, Locking, A popping sensation, Altered range of motion, Difficulty straightening the knee fully",
+
+  },
+     
+  {
+
+title: 'How is a meniscal tear diagnosed? ',
+
+description: "MRI scans can verify meniscal pathology, but x-rays may be needed to assess associated pathology such as arthritis. ",
+
+  },
+  {
+
+title: 'What is the treatment for meniscal tear?',
+
+description: "  Initially, rest your knee, and use crutches if you are unsteady. Avoid any activities that worsen your knee pain, such as kneeling, squatting, and running, Ice your knee every three to four hours for 30 minutes. Compress or wrap the knee in an elastic bandage to reduce inflammation. Elevate your knee to reduce swelling see a physiotherapist. Surgical treatment is usually a day surgery, using minimally invasive techniques.",
+
+  },
+  
+      ]}
+/>
+<!-- kc-psi PSI (Patient Specific Implant) -->
+<FAQs
+  id="kc-psi"
+  title="knee Conditions : PSI (Patient Specific Implant)"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is PSI (Patient Specific Implant)?',
+    description: "Whilst your choice of a long lasting total knee replacement prosthesis is important, equally it is important to get the positioning and balance right when putting it in.",
+    description1:'By using preoperative CT scans to create a prosthetic module that fits your knee, we can use technology to create a tailor-made cutting jig – that helps accurately implant a prosthesis in the best position for your joint.',
+      },
+      
+      ]}
+/>
+<!-- kc-quadricepstendontear -->
+<FAQs
+  id="kc-quadricepstendontear"
+  title="knee Conditions : Quadriceps Tendon Tear"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is a quadriceps tendon tear?',
+    description: "The quadriceps tendon can be found just above the kneecap and connects the muscles in the front of the thigh to the top of the knee cap. They are generally “high energy” injuries, and occur as a result of vigorous sporting activities, a car accident or falls from a height or standing position . The mechanism of this injury is an eccentric (lengthening) contraction of the quads resulting in a painful disabling condition. Tears are more common in middle aged populations. Tendon weakness caused by tendinitis or chronic disease will result in higher risk of sustaining a quads tendon tear. Most large quads tendon tears should be treated surgically.",
+      },
+      {
+
+title: 'What are the symptoms of a quadriceps tendon tear?',
+description: " Popping or tearing, Pain and swelling usually immediately after trauma, Inability to straighten or extend the knee, An indentation at the top of your kneecap where the tendon tore, Bruising, Tenderness, Knee cramping, Your kneecap may droop because the tendon is torn, Difficulty walking due to the knee buckling or giving way",
+
+  },
+     
+  {
+
+title: 'How is a quadriceps tendon tear diagnosed?',
+
+description: "X-rays to rule out bone fractures. X-rays can also show a patellar baja (a knee cap that is lower than normal). MRI is the gold standard here, because it can help distinguish between a full and partial tear.",
+
+  },
+  {
+
+title: 'What is the treatment of a quadriceps tendon tear?',
+
+description: "Small or partial tears may heal with brace immobilisation, crutches and physical therapy.",
+description1:'The patient in this case should be able to do a straight-leg raise and exhibit good knee strength during Dr’s examination of their knee. In these cases immobilisation should commence immediately for a short period, and range of motion exercises started a few weeks after injury. Typically, partial tears will health in about three months. However most complete tears require surgery to repair the torn tendon. Surgery involves reattaching the torn tendon to the top of the kneecap. Results are better if the repair is performed soon after the injury to prevent tendon scarring or the tendon shortening and tightening. Usually this surgery should be done within a week of the injury if the patient has no other underlying health issues that need to be treated first. Recovery generally takes 6-8  months, with physical therapy starting within a few days of surgery. The brace is typically discontinued at eight weeks of surgery. The quadriceps muscle is very powerful and if problems are not identified early it can be harder down track to fix with surgical repair. Re-tear after surgery is rare, unless there is an injury or fall close to the operative phase. ',
+  },
+  
+      ]}
+/>
+<!-- kc-shinsplints -->
+<FAQs
+  id="kc-shinsplints"
+  title="knee Conditions : Shin Splints"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is a shin splint?',
+    description: "The term “shin splints” refers to pain along the inner edge of the shin bone between the knee and the ankle. Shin splints are an overuse injury, involving inflammation of the muscles, tendons and bone of the tibia. Shin splints occur with a sudden change of frequency and load of exercise. Those with poor arch support or flat feet are at higher risk of developing shin splints. Shin splints not treated can go on to develop into a stress fracture, tendinitis or chronic exertional compartment syndrome. Flat feet, muscle weakness in the thighs or buttocks, or improper training techniques are are culprits for shin splints. Running down hill, running on hard or uneven surfaces or ill fitting shoes can also exacerbate it, as can sports with rapid stops and starts such as skiing. Dancers, military recruits, and people who are likely to overuse muscles causing them to fatigue are also at risk of this condition.",
+      },
+      {
+
+title: 'What are the symptoms of a shin splint?',
+description: "Symptoms of a shin splint include",
+description1: "A dull ache in the lower leg at the front of the leg, Tenderness along the inner part of the lower leg, Pain on either side of the shin bone, Mild swelling (not always), Pain often worse during exercise",
+
+  },
+     
+  {
+
+title: 'What tests are used to diagnose a shin splint?',
+
+description: "Shin splints can generally be diagnosed during Dr’s examination, while x-rays may be called for if Dr suspects a fracture or another condition.",
+
+  },
+  {
+
+title: 'What is the treatment for shin splint?',
+
+description: " Rest from exercise usually for two week, Walking and swimming is ok in this time, Foam rollers can be used to massage your shins, Inflammation can be managed through anti-inflammatory medicine or paracetamol, Wear proper fitting shoes, Proper stretching and warm up before exercise, Ice packs and cold compresses can help, Arch supports for feet, Proper stretching and warm up before exercise",
+
+  },
+  
+  
+      ]}
+/>
+<!-- kc-osgood -->
+<FAQs
+  id="kc-osgood"
+  title="knee Conditions : Osgood-Schlatter Disease"
+  subtitle=""
+  tagline=""
+  classes={{ container: 'max-w-5xl',title: 'text-green-1', }}
+  items={[
+      {
+
+    title: 'What is Osgood-Schlatter Disease?',
+    description: "Osgood-Schlatter disease is an overuse injury of the knee that typically affects children and adolescents experiencing growth spurts. Kids who are involved in running and jumping sports and other activities which involve swift change of direction are more prone. These include soccer, basketball, netball, ballet and football.",
+      },
+      {
+
+title: 'What are the symptoms of Osgood-Schlatter Disease?',
+description: "Painful lump below the kneecap, Swelling, Tenderness below the kneecap",
+
+  },
+     
+  {
+
+title: 'What is the treatment for Osgood-Schlatter Disease?',
+
+description: " This is usually resolving, and tends to improve when the child’s bones stop growing. Treatment includes a course of non steroidal anti inflammatory drugs (NSAIDs). In some patients, Osgood-Schlatter’s may last 2-3 years, but in most cases passes at the end of the growth spurt at 14-16 years old. Physical therapy can help with exercises to stretch the thigh’s quadriceps, which can reduce tension in the kneecap to patella tendon.",
+
+  },
+  
+      ]}
+/>
+
+
+</Layout>
+<!-- note: change doctor name and hospital name -->
+<!-- button for condition page -->
+<!-- <a href="#">
+<button>gggg</button>
+</a> -->

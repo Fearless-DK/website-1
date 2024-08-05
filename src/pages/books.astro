@@ -1,0 +1,148 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+// import LogoImg from '~/assets/images/Logo1.jpeg';
+
+// import Hero from '~/components/widgets/Hero.astro';
+// import Note from '~/components/widgets/Note.astro';
+// import Features from '~/components/widgets/Features.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+// import Steps from '~/components/widgets/Steps.astro';
+// import Content from '~/components/widgets/Content.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import FAQs from '~/components/widgets/FAQs.astro';
+// import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+//Arthro
+// import Hero2 from '~/components/widgets/Hero2.astro';
+import Hero3 from '~/components/widgets/hero3.astro';
+// import Button from '~/components/ui/Button.astro';
+
+// import Features4 from '~/components/widgets/Features4.astro';
+
+// import Image from '~/components/common/Image.astro'; //Arthro
+// import BannerImg from '~/assets/images/LongerBanner.png'; //Arthro
+
+// import ImagelistGallery from '~/components/widgets/ImagelistGallery.astro';
+// import ImagelistHospGallery from '~/components/widgets/ImagelistHospGallery.astro';
+
+// import appStoreImg from '~/assets/images/app-store.png';
+// import googlePlayImg from '~/assets/images/google-play.png';
+
+const appStoreDownloadLink = 'https://github.com/onwidget/astrowind';
+const googlePlayDownloadLink = 'https://github.com/onwidget/astrowind';
+
+const metadata = {
+  title: 'ArthroSurgeon Dr. Dinesh Choudary-Book',
+  ignoreTitleTemplate: true,
+};
+---
+
+
+  <Layout metadata={metadata}>
+    <div class="h114" >
+    <!-- Arthro-->
+    <!--
+<Image  class="mx-auto rounded-md w-full  " 
+        src={BannerImg} 
+        alt="Banner Image" 
+        widths={[400, 768, 1024, 2040]} 
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px" 
+        loading="eager"
+                  width={1600}
+                  height={136}
+        
+        />
+-->
+
+    <Hero3
+      image={{
+        src: '~/assets/images/book1.jpeg',
+        alt: 'AstroWind Hero Image',
+        href:'https://www.amazon.in/Exercise-Prescription-Paperback-Dr-Dinesh-Dr-Jonathan/dp/9385983962'
+      }}
+      
+      
+      actions={[
+        { variant: 'primary', text: 'Order Now', href: 'https://www.amazon.in/Exercise-Prescription-Paperback-Dr-Dinesh-Dr-Jonathan/dp/9385983962',target:'_blank'  },
+        
+      ]}
+    >
+      <Fragment slot="title">
+        <!--
+    <div class="text-5xl bg-gradient-to-r from-teal-600 via-indigo-700 to-purple-800 inline-block text-transparent bg-clip-text mb-5  dark:text-white highlight">............................................</div>
+    -->
+        <div
+          class=" dark:text-[#a6dcc5] text-5xl mb-20  inline  bg-clip-text "
+        >
+        The Exercise Prescription
+        </div>
+        <!-- <h1 class="animate-translateL mb-10 bg-gradient-to-r from-[#6658fe] via-pink-500 to-[#6658fe] bg-[length:200%_auto] bg-clip-text text-6xl font-bold text-transparent">Dr. Dinesh Choudary</h1> -->
+        <div class="text-2xl text-neutral-600 font-family:Urbanist tracking-tighter mb-11 dark:text-slate-400 ">
+        By Dr.Dinesh Choudary and Dr.Jonathan Herald
+        </div>
+        <!--  <div class="text-3xl animate-typing overflow-hidden whitespace-nowrap  text-neutral-600 font-family:Urbanist tracking-tighter"> Your Expert in Comprehensive Joint Care. </div>
+     -->
+        <!-- <span
+        class="hidden xl:inline">made easy</span
+      >-->
+        <!-- <div class="text-5xl bg-gradient-to-r from-teal-600 via-indigo-700 to-purple-800 inline-block text-transparent bg-clip-text mb-5  dark:text-white highlight">............................................</div>
+   -->
+      </Fragment>
+
+      <Fragment slot="subtitle">
+        <span class="text-xl text-[#007174] dark:text-[#a6dcc5] p-1.5 sm:inline  sm:p-0.5 italic font-Nunito">
+            "Those who think they have no time for exercise will sooner or later have to find time for illness. " <div class="font-bold text-lg font-Nunito -mt-5 text-neutral-600 dark:text-slate-400  "> Edward Stanley, former British Prime Minister.</div><br/><div class="mb-11 text-xl font-Nunito"> The book is a collaboration of International Doctors, Scientists, researchers and athletes as well as patients of St. Vincent's Hospital Sydney. How Exercise changes our DNA</div>
+        </span>
+      </Fragment>
+    </Hero3>
+    <div class="text-center text-3xl">Endorsed by Eminent Personalities</div>
+    <Features3
+    id="features"
+    title="The book looks to answer questions like:"
+    subtitle1=""
+    columns={3}
+    
+    items={[
+      {
+        title: 'Can we re-program bad DNA with exercise?',
+        description: '',
+        icon: 'tabler:square-number-1',
+      },
+      {
+        title: 'Why do 80-year-old cyclists have the immune system of 20-year-olds?',
+        description:
+          '',
+        icon: 'tabler:square-number-2',
+      },
+      {
+        title: 'How does exercise reduce our risk of severe complications of COVID-19?',
+        description: '',
+        icon: 'tabler:square-number-3',
+      },
+     
+    ]}
+
+    image={{
+      src: '~/assets/images/image-28.jpeg',
+      alt: 'Colorful Image',
+    }}  />
+<div class="font-Nunito mt-6 -mb-7 text-xl mx-4 sm:mx-16 md:mx-64 text-center align-middle">
+  Discover the latest and greatest ways to accelerate recovery, optimise weight and maximise your hard-earned sweat into your 30s, 40s, 50s and beyond. <br/><br/> Read inspiring case studies of Sydney cancer patients who are using exercise to help prevent cancer recurrence.
+</div>
+<CallToAction
+title="What are you waiting for? "
+subtitle="Dive into 'The Exercise Prescription' to unlock the science-backed secrets of exercise, combatting illness, and optimizing wellness.<br/>Join the movement towards a healthier tomorrow. Place your order now!"
+actions={[
+  {
+    variant: 'primary',
+    text: 'Order Now',
+    href: 'https://www.amazon.in/Exercise-Prescription-Paperback-Dr-Dinesh-Dr-Jonathan/dp/9385983962',
+    target:'_blank',
+    // icon: 'tabler:book-download',
+  },
+]}
+/>
+</div>
+  </Layout>
+

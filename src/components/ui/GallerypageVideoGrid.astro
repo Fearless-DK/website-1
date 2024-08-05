@@ -1,0 +1,120 @@
+---
+import Item from '~/components/ui/GallerypageVideoGridItem.astro';
+import type { Post } from '~/types';
+
+export interface Props {
+  posts: Post[];
+}
+
+//const { posts } = Astro.props;
+
+const posts = [
+{
+    title: " Dr.Dinesh choudary about Osteoarthritis Symptoms",
+    excerpt: "What is the solution for knee pain at a young age? and What are the tratment's for knee pain?",
+    image: "https://www.youtube.com/embed/uZOJaDXgqvQ?si=fEaFXEgZmCx60Hcc", // Relative or absolute path to the image
+    permalink: "https://youtu.be/uZOJaDXgqvQ?si=LNvci1QP_h8KpeaS" // Target URL for the post
+  },
+ 
+   {
+    title: "Dr. Dinesh Choudary explain about the death of priya (the football player)",
+    excerpt: "Doctor explain about the issue of Seventeen-year-old Priya underwent a procedure at the Government Hospital, following complications, her right leg was amputated and died of multiple-organ failure. ",
+    image: "https://www.youtube.com/embed/8FZWUizF_jU?si=TW8pRgSBa9BL_E2G", // Relative or absolute path to the image
+    permalink: "https://youtu.be/8FZWUizF_jU?si=8CwTvABYJbSbdu-6" // Target URL for the post
+  },
+   {
+    title: "Orthopaedic surgeon and sports medicine specialist",
+    excerpt: "Dr. Dinesh Choudary explains the reason for the blood vomit and the many health issues caused by the gym supplements.",
+    image: "https://www.youtube.com/embed/FfLSomm9Pfk?si=1NGPqsVSYnAUFI9c", // Relative or absolute path to the image
+    permalink: "https://youtu.be/UpxLm3FKFP8" // Target URL for the post
+  },
+  {
+    title: "Dr. Dinesh Choudary explains about issues occur by gym workout- womens.",
+    excerpt: "The doctor will answer questions like, Can we workout during periods? Does protein powder cause kidney problems? Does breast surgery cause major issues?",
+    image: "https://www.youtube.com/embed/Guk-Gh0Pg_A?si=FbxJkt3hlINGLqwK", // Relative or absolute path to the image
+    permalink: "https://youtu.be/Guk-Gh0Pg_A?si=tfD5Wgp1p2IJrPS2" // Target URL for the post
+  },
+  
+    {
+    title: "Dr Dinesh Choudary full interview about his view on sports nutrition and strength training etc.  ",
+    excerpt: "In this episode we will try to understand the types of surgery he performs, how to treat a sports injury, lower back protection, knee replacement and all about strength training basics and we also ended up discussing supplements and surgeries performed to increase height",
+    image: "https://www.youtube.com/embed/JafFL7otf6g?si=NYg0Sgmyvpn4wZ-M", // Relative or absolute path to the image
+    permalink: "https://youtu.be/JafFL7otf6g?si=jUlPM1UUWqhxZesF" // Target URL for the post
+  },
+  {
+    title: "Knee replacement",
+    excerpt: "Dr. Dinesh Choudhary explain about the joints pain and its reasons.",
+    image: "https://www.youtube.com/embed/3aI-iMC8UaQ?si=73AF8O-akVBZIz2q", // Relative or absolute path to the image
+    permalink: "https://youtu.be/QbicrpFQ7XI?si=l3kYyQDA6tu7pnRu" // Target URL for the post
+  },
+  
+  {
+    title: "Successful elbow reconstruction surgery - Dr. Dinesh Choudary",
+    excerpt: "Review by the patient from Meridian Hospital",
+    image: "https://www.youtube.com/embed/eaQyLNdW1J4?si=8ApZxFyjpwzouMW8", // Relative or absolute path to the image
+    permalink: "https://youtu.be/eaQyLNdW1J4?si=NmqtLiNQcDPI1Oct" // Target URL for the post
+  },
+   {
+    title: "Who needs knee replacement?",
+    excerpt: "Explain by our Dr. Dinesh Choudary",
+    image: "https://www.youtube.com/embed/UpxLm3FKFP8", // Relative or absolute path to the image
+    permalink: "https://youtu.be/UpxLm3FKFP8" // Target URL for the post
+  },
+  {
+    title: " What is Knee Replacement Surgery?",
+    excerpt: "What is Knee Replacement Surgery and procedure explained by our Specialist Dr. Dinesh Choudary. ",
+    image: "https://www.youtube.com/embed/gSlDZMHA6jQ", // Relative or absolute path to the image
+    permalink: "https://youtube.com/shorts/gSlDZMHA6jQ?si=Y9L2rYRFOpOhyoR6" // Target URL for the post
+  },
+  {
+    title: " Tips Before Knee Replacement?",
+    excerpt: "3 Tips Before Knee Replacement explained by our Specialist Dr. Dinesh Choudary.",
+    image: "https://www.youtube.com/embed/gh2VyUbokr0", // Relative or absolute path to the image
+    permalink: "https://youtube.com/shorts/gh2VyUbokr0?si=1vL1p2D6h7Ug5lmE" // Target URL for the post
+  },
+ 
+  {
+    title: "Tips After Knee Replacement",
+    excerpt: "3 Tips After Knee Replacement explained by our Specialist Dr. Dinesh Choudary.",
+    image: "https://www.youtube.com/embed/ZumzCj3UR-Y", // Relative or absolute path to the image
+    permalink: "https://youtube.com/shorts/ZumzCj3UR-Y?si=vKIsNE3djbsi56PJ" // Target URL for the post
+  },
+  
+  {
+    title: "Recovery time for Knee Replacement?",
+    excerpt: "Recovery time for Knee Replacement Surgery explained by Dr. Dinesh Choudary ",
+    image: "https://www.youtube.com/embed/aSsos3IG1s8", // Relative or absolute path to the image
+    permalink: "https://youtube.com/shorts/aSsos3IG1s8?si=uymgRrnofztmFva6" // Target URL for the post
+  },
+  
+  {
+    title: "What is Osteoporosis ?",
+    excerpt: "What is Osteoporosis. explained by our Specialist Dr. Dinesh Choudary. ",
+    image: "https://www.youtube.com/embed/C7CqqKr_mQA", // Relative or absolute path to the image
+    permalink: "https://youtube.com/shorts/C7CqqKr_mQA?si=YQwgZGFzl2qd4BA4" // Target URL for the post
+  },
+
+  {
+    title: " What is Over Use Injury ?",
+    excerpt: "What is Over Use Injury explained by our Specialist Dr. Dinesh Choudary",
+    image: "https://www.youtube.com/embed/ikrqJTyjZO0", // Relative or absolute path to the image
+    permalink: "https://youtu.be/UpxLm3FKFP8" // Target URL for the post
+  },
+  {
+    title: " What is Tennis Elbow?",
+    excerpt: " What is Tennis Elbow? explained by our Specialist Dr. Dinesh Choudary",
+    image: "https://www.youtube.com/embed/PoV4AKWQIfQ", // Relative or absolute path to the image
+    permalink: "https://youtu.be/UpxLm3FKFP8" // Target URL for the post
+  },
+  {
+    title: " What is Sciatica?",
+    excerpt: "What is Sciatica? explained by our Specialist Dr. Dinesh Choudary",
+    image: "https://www.youtube.com/embed/uUmhybbVVXU", // Relative or absolute path to the image
+    permalink: "https://youtube.com/shorts/uUmhybbVVXU?si=raVm3KlE5xIYbwWV" // Target URL for the post
+  },
+]
+---
+
+<div class="grid gap-12 row-gap-12 md:grid-cols-2 lg:grid-cols-3 -mb-4 ">
+  {posts.map((post) => <Item post={post} />)}
+</div>

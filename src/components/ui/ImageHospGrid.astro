@@ -1,0 +1,43 @@
+---
+import Item from '~/components/ui/ImageGridHospItem1.astro';
+import type { Post } from '~/types';
+
+export interface Props {
+  posts : Post[];
+}
+
+//const { posts } = Astro.props;
+
+const posts:Post[] = [
+  {
+    title: "Meridian Hospitals, Kolathur",
+    excerpt: "",
+    image: "~/assets/images/MeridianHospital.png", // Relative or absolute path to the image
+    permalink: "https://maps.app.goo.gl/mTqRJWu6bpBScBJ37", // Target URL for the post
+
+  },
+   {
+    title: "Indigo Women Center, Anna Nagar",
+    excerpt: "",
+    image: "~/assets/images/indigowomencenter.png", // Relative or absolute path to the image
+    permalink: "https://maps.app.goo.gl/W91K7szxB9K7rdEi9" // Target URL for the post
+  },
+   {
+    title: "Apollo Hospitals, Kilpauk",
+    excerpt: "",
+    image: "~/assets/images/ApolloKilpauk.png", // Relative or absolute path to the image
+    permalink: "https://maps.app.goo.gl/wK3WyakjANCEkahHA" // Target URL for the post
+  },
+   {
+    title: "DC Ortho Clinic, Aminjikarai",
+    excerpt: "",
+    image: "~/assets/images/DCclinic.png", // Relative or absolute path to the image
+    permalink: "https://maps.app.goo.gl/cWfhBnKVCjqXgguo9" // Target URL for the post
+  },
+
+]
+---
+
+<div class="grid gap-6 row-gap-5 md:grid-cols-2 lg:grid-cols-4 -mb-6">
+  {posts.map((post) =><Item post={post} />)}
+</div>

@@ -1,0 +1,146 @@
+---
+import Item from '~/components/ui/GallerypageImageGridItem.astro';
+import type { Post } from '~/types';
+
+export interface Props {
+  posts: Array<Post>;
+}
+
+//const { posts } = Astro.props;
+
+const posts = [
+{
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/nsmn7YG/Whats-App-Image-2021-11-09-at-1-20-02-PM.jpg",
+    permalink: "https://i.ibb.co/nsmn7YG/Whats-App-Image-2021-11-09-at-1-20-02-PM.jpg"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/gzq8Vmp/image-22.jpg",
+    permalink: "https://i.ibb.co/gzq8Vmp/image-22.jpg",
+  },
+  
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/nsmn7YG/Whats-App-Image-2021-11-09-at-1-20-02-PM.jpg",
+    permalink: "https://i.ibb.co/nsmn7YG/Whats-App-Image-2021-11-09-at-1-20-02-PM.jpg"
+  },
+  
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/kDkQ6yj/image-25.jpg",
+    permalink: "https://i.ibb.co/6yXWqCT/image-24.jpg",
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/S5PkccC/Whats-App-Image-2021-11-09-at-1-21-37-PM.jpg",
+    permalink: "https://lh5.googleusercontent.com/p/AF1QipOImsiMYcWSTg9A48CD4d8EBSkI-ScBI9cqvFPX=w750-h813-p-k-no"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/QfTdWKg/Whats-App-Image-2022-02-18-at-11-53-43-AM.jpg",
+    permalink: "https://lh5.googleusercontent.com/p/AF1QipOaaxL7HqZARphLwSsg_ViTj5K1TzN5vs5SPmkx=w750-h813-p-k-no"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://content3.jdmagicbox.com/comp/chennai/s9/044pxx44.xx44.220930043502.p6s9/catalogue/dc-ortho-clinic-chennai-orthopeadic-clinics-zz13f0cuoc.jpg", // Relative or absolute path to the image
+    permalink: "https://content3.jdmagicbox.com/comp/chennai/s9/044pxx44.xx44.220930043502.p6s9/catalogue/dc-ortho-clinic-chennai-orthopeadic-clinics-zz13f0cuoc.jpg" // Target URL for the post
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "~/assets/images/gallery/2.jpg", // Relative or absolute path to the image
+    permalink: "https://meridianhospitals.in/wp-content/uploads/2023/03/23.jpg"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/NjLwnrP/Whats-App-Image-2024-06-02-at-11-02-33-AM.jpg",
+    permalink: "https://i.ibb.co/NjLwnrP/Whats-App-Image-2024-06-02-at-11-02-33-AM.jpg",
+
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/CHGYS7C/doctor22.jpg",
+    permalink: "https://i.ibb.co/CHGYS7C/doctor22.jpg"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/Kq8Hfjz/doctor23.jpg",
+    permalink: "https://i.ibb.co/Kq8Hfjz/doctor23.jpg"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/GMjm83j/doctor24.jpg",
+    permalink: "https://i.ibb.co/GMjm83j/doctor24.jpg"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/JBM7TB2/doctor25.jpg",
+    permalink: "https://i.ibb.co/JBM7TB2/doctor25.jpg"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/TLPpVP0/Whats-App-Image-2024-04-08-at-10-20-53-AM.jpg", // Relative or absolute path to the image
+    permalink: "https://i.ibb.co/vkdVyGK/Whats-App-Image-2024-04-08-at-10-20-53-AM.jpg"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/10Mt1vp/Whats-App-Image-2024-04-08-at-10-20-52-AM-2.jpg", // Relative or absolute path to the image
+    permalink: "https://i.ibb.co/10Mt1vp/Whats-App-Image-2024-04-08-at-10-20-52-AM-2.jpg" // Target URL for the post
+  },
+  
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/BsY3GJc/Whats-App-Image-2024-04-08-at-10-20-52-AM.jpg",
+    permalink: "https://i.ibb.co/BsY3GJc/Whats-App-Image-2024-04-08-at-10-20-52-AM.jpg"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/SfS9fJ4/Whats-App-Image-2024-04-08-at-10-20-51-AM-2.jpg",
+    permalink: "https://i.ibb.co/SfS9fJ4/Whats-App-Image-2024-04-08-at-10-20-51-AM-2.jpg"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/yFg8bhk/Whats-App-Image-2024-04-08-at-10-20-51-AM-1.jpg",
+    permalink: "https://i.ibb.co/2tKY8jc/Whats-App-Image-2024-04-08-at-10-20-51-AM-1.jpg"
+    
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/R7JCLqv/Whats-App-Image-2024-04-08-at-10-20-51-AM.jpg",
+    permalink: "https://i.ibb.co/R7JCLqv/Whats-App-Image-2024-04-08-at-10-20-51-AM.jpg"
+  },
+  {
+    title: "",
+    excerpt: "",
+    image: "https://i.ibb.co/wwMV01X/2020-10-05.jpg" ,
+    permalink: "https://lh5.googleusercontent.com/p/AF1QipOHsqa13zQJ6yWYpJx-KlmjdqGllZUHsTLlnT4=w750-h1235-p-k-no"
+  },
+  
+  
+  
+  
+]
+---
+
+<div class="grid gap-3 row-gap-3 md:grid-cols-2 lg:grid-cols-3 -mb-6 ">
+  {posts.map((post) => <Item post={post} />)}
+</div>

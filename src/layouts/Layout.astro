@@ -1,0 +1,141 @@
+---
+import '~/assets/styles/tailwind.css';
+
+import { I18N } from "~/utils/config";
+
+import CommonMeta from '~/components/common/CommonMeta.astro';
+import Favicons from '~/components/Favicons.astro';
+import CustomStyles from "~/components/CustomStyles.astro"
+import ApplyColorMode from "~/components/common/ApplyColorMode.astro"
+import Metadata from '~/components/common/Metadata.astro';
+import SiteVerification  from "~/components/common/SiteVerification.astro"
+import Analytics  from "~/components/common/Analytics.astro"
+import BasicScripts from '~/components/common/BasicScripts.astro';
+import Image from '~/components/common/Image.astro';//Arthro
+import LogoImg from '~/assets/images/Logo1.jpeg';//Arthro
+import type { MetaData as MetaDataType } from '~/types';
+import Index from '~/pages/index.astro';
+import PageLayout from './PageLayout.astro';
+
+export interface Props {
+  metadata?: MetaDataType;
+}
+
+const { metadata = {} } = Astro.props;
+const { language, textDirection } = I18N;
+---
+
+<!DOCTYPE html>
+<html lang={language} dir={textDirection} class="2xl:text-[20px]">
+
+  <head>
+    <CommonMeta />
+    <Favicons />
+    <CustomStyles />
+    <ApplyColorMode />
+    <Metadata {...metadata} />
+    <SiteVerification />
+    <Analytics />
+  </head>
+
+  <body class="antialiased text-default bg-page tracking-tight ">
+    <div>
+     
+      <div class="preloader font-LilitaOne text-[#007174] text-4xl  h-screen flex justify-center items-center animate-pulse">ARTHROSURGEON
+      </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $(document).ready(function(){
+      // Initially hide the content slot
+      $('#content-slot').hide();
+      
+      // Show preloader
+      $('.preloader').show();
+      
+      // Simulate loading delay
+      setTimeout(function(){
+          // Load contentpreloader
+          $('#content-slot').show();
+          
+          // Hide preloader
+          $('.preloader').fadeOut();
+      },1000); // Adjust the timeout duration as needed
+  });
+</script>
+  
+   
+  </div>
+
+
+  <div id="content-slot" class="-mt-7">
+   
+     <BasicScripts />
+      <style is:global>
+      img {
+        content-visibility: auto;
+      }
+    </style>
+    <slot/>
+  </div>
+  
+  <button class="btn btn-danger btn-floating btn-lg bg-[#2bb1af] hover:bg-[#2bb1af] dark:hover:bg-[#2bb1af]" id="btn-back-to-top" >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="w-6 h-6 ">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+</svg>
+
+  </button>
+  <style>
+    #btn-back-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: none;
+
+}
+  </style>
+  <script>
+    let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+scrollFunction();
+};
+
+function scrollFunction() {
+if (
+document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20
+) {
+mybutton!.style.display = "block";
+} else {
+mybutton!.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton!.addEventListener("click", backToTop);
+
+function backToTop() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+  </script>
+  
+  </body>
+</html>
+
+
+ <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+<dotlottie-player src="https://lottie.host/1edc5004-90d9-407e-ab2f-61ddb4e29108/EFHfaR9np0.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" autoplay></dotlottie-player> -->
+ <!-- <script>
+      $(window).on('load', function(){
+        $('.spin-wrapper').fadeOut(1000);
+        
+      });
+    </script> -->
+    <!-- <Image  class="animate-bounce rounded-md" 
+    src={LogoImg} 
+    alt="Logo Image" 
+    width={300}
+    height={90}
+     /> -->

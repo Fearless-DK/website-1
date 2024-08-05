@@ -1,0 +1,44 @@
+---
+import { SITE } from '~/utils/config';
+
+import Image from '~/components/common/Image.astro';//Arthro
+import LogoImg from '~/assets/images/LogoArthrosurgeon.png';//Arthro
+---
+<!--
+<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-slate-200 whitespace-nowrap dark:text-white"><span> DINESH CHOUDARY</span> <hr/>
+<span>
+<Image  class="mx-auto rounded-md w-full" 
+        src={LogoImg} 
+        alt="Logo Image" 
+        widths={[115, 115, 115, 115]} 
+        sizes="(max-width: 115px) 60px, (max-width: 115px) 60px, (max-width: 115px) 60px, 115px" 
+        loading="eager"
+                  width={115}
+                  height={60}
+        
+        />
+{SITE?.name}</span>
+</span>
+
+-->
+
+<!-- bg-[#0097b2] -->
+<div class="flex items-center  text-white dark:text-black md:ml-6 ml-1 ">
+  <!-- Image Container -->
+  <div class="flex-none">
+    <Image  class="rounded-md" 
+            src={LogoImg} 
+            alt="Logo Image" 
+            width={280}
+            height={60}
+            loading="eager" />
+  </div>
+  
+  <!-- Text Container -->
+  <div class="flex-grow text-left ml-1 self-center ml-2 rtl:ml-0 rtl:mr-2 whitespace-nowrap">
+    <!-- <div class="block  text-base dark:text-black tracking-tighter ">DINESH CHOUDARY</div>
+    <div class="block  text-sm dark:text-black ">-ARTHROSURGEON-</div> -->
+  </div>
+</div>
+
+
